@@ -1,0 +1,76 @@
+h1 {
+	font-weight: 700;
+	font-size: $font-xxxl;
+	@include font-stack-brand;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: $font-xl;
+	@include font-stack-brand;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: $font-large;
+	@include font-stack-brand;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: $font-med;
+	@include font-stack-brand;
+}
+
+h5 {
+	font-weight: 700;
+	font-size: $font-small;
+	@include font-stack-brand;
+}
+
+p {
+	line-height: 1.2;
+	font-size: $font-large;
+	@include font-stack-brand;
+}
+
+a {
+	text-decoration: none;
+	color: $blue;
+	font-size: $font-large;
+	display: inline-block;
+	@include font-stack-brand;
+	&:hover, &:focus {
+		color: $lightorange;
+	}
+}
+
+span {
+	display: inline-block;
+	@include font-stack-brand;
+}
+
+li {
+	@include font-stack-brand;
+}
+
+// Makes a peice of text stand out within a body of text
+.make-strong {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+// Makes a peice of text portray a sense of urgency
+.make-urgent {
+	font-weight: 700;
+	color: $red;
+	text-transform: uppercase;
+}
+
+// Makes a peice of text fade out like a note to be added at end of body of text
+.make-note {
+	font-weight: 300;
+	font-style: italic;
+	color: $lightgray;
+	font-size: $font-small;
+}

@@ -1,0 +1,37 @@
+
+
+//Compensates for white flash from typekit font request.
+@mixin FOUTprevent {
+  .wf-loading & {
+    visibility: hidden;
+  }
+}
+
+//----------------------------------------FONTS--
+@mixin font-stack-brand {
+	font-family: "trajan-sans-pro",sans-serif;
+  @include FOUTprevent;
+}
+
+@mixin font-stack-header {
+	font-family: "proxima-nova",sans-serif;
+  @include FOUTprevent;
+}
+
+@mixin font-stack-body {
+	font-family: "raleway", sans-serif;
+  @include FOUTprevent;
+}
+
+//----------------------------------------BREAKPOINTS--
+@mixin bp($point) {
+  @if $point == xldesk {
+    @media (max-width: 1224px) { @content; }
+  }
+  @if $point == desktop {
+    @media (max-width: 960px) { @content; }
+  }
+  @if $point == mobile {
+    @media (max-width: 400px) { @content; }
+  }
+}
