@@ -54,20 +54,20 @@ li {
 	@include font-stack-brand;
 }
 
-// Makes a peice of text stand out within a body of text
+// Makes a piece of text stand out within a body of text
 .make-strong {
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-// Makes a peice of text portray a sense of urgency
+// Makes a piece of text portray a sense of urgency
 .make-urgent {
 	font-weight: 700;
 	color: $red;
 	text-transform: uppercase;
 }
 
-// Makes a peice of text fade out like a note to be added at end of body of text
+// Makes a piece of text fade out like a note to be added at end of body of text
 .make-note {
 	font-weight: 300;
 	font-style: italic;

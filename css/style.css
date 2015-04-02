@@ -1,0 +1,413 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* FONT VARIABLES */
+/* ################################################################## */
+/*    NOTE:  The following breakpoints should be assocciated with the following sizes. */
+/* 		     		X-small          =>          bp(venus) 				*/
+/* 		     		X-med 		    =>          bp(neptune) 			*/
+/* 		     		X-large          =>           default   				*/
+/* ################################################################## */
+/* Font-size */
+/* Line-height */
+/* FONT-SIZES-MAIN-PAGE */
+/* COLOR VARIABLES */
+@-webkit-keyframes fontfix {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1; } }
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading h1 {
+    visibility: hidden; }
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading h2 {
+    visibility: hidden; }
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading h3 {
+    visibility: hidden; }
+
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading h4 {
+    visibility: hidden; }
+
+h5 {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading h5 {
+    visibility: hidden; }
+
+p {
+  line-height: 1.2;
+  font-size: 24px;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading p {
+    visibility: hidden; }
+
+a {
+  text-decoration: none;
+  color: #2176C7;
+  font-size: 24px;
+  display: inline-block;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading a {
+    visibility: hidden; }
+  a:hover, a:focus {
+    color: #CA7740; }
+
+span {
+  display: inline-block;
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading span {
+    visibility: hidden; }
+
+li {
+  font-family: "proxima-nova",sans-serif; }
+  .wf-loading li {
+    visibility: hidden; }
+
+.make-strong {
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.make-urgent {
+  font-weight: 700;
+  color: #E74C3C;
+  text-transform: uppercase; }
+
+.make-note {
+  font-weight: 300;
+  font-style: italic;
+  color: #819090;
+  font-size: 16px; }
+
+/* The following document is only for the most basic layout of this website.  Everything else will be included in the modules.scss file in order to keep things organized. */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  max-width: 1220px;
+  margin: 0 auto; }
+
+.top-content {
+  float: left; }
+
+.head-container {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline; }
+
+.landing-image {
+  width: 100%;
+  height: 400px;
+  background: #222222 url("../images/content/header-child.gif") no-repeat;
+  background-size: cover; }
+
+.navigation {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  *zoom: 1; }
+  .navigation .navigation-item {
+    display: inline-block;
+    text-align: center; }
+
+.recent-news {
+  width: 32.71028%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline;
+  /* Query below was Specially designed for use with the Susy grid */ }
+  @media (max-width: 47em) {
+    .recent-news {
+      display: none; } }
+
+.main-info {
+  width: 66.35514%;
+  float: left;
+  margin-right: 0.93458%;
+  display: inline;
+  /* Query below was Specially designed for use with the Susy grid */ }
+  @media (max-width: 47em) {
+    .main-info {
+      width: 83.17757%;
+      float: left;
+      margin-right: 0.93458%;
+      display: inline;
+      margin: 0 1em; } }
+
+footer {
+  width: 100%;
+  float: left;
+  margin-right: 0.93458%;
+  display: inline; }
+
+.top-footer {
+  width: 100%;
+  float: left;
+  margin-right: 0.93458%;
+  display: inline; }
+  .top-footer .foot-location-info {
+    float: left;
+    /* Query below was Specially designed for use with the Susy grid */ }
+    @media (max-width: 600px) {
+      .top-footer .foot-location-info {
+        width: 100%;
+        float: left;
+        margin-right: 0.93458%;
+        display: inline; } }
+  .top-footer .foot-contact-info {
+    float: right;
+    /* Query below was Specially designed for use with the Susy grid */ }
+    @media (max-width: 600px) {
+      .top-footer .foot-contact-info {
+        float: left;
+        width: 100%;
+        float: left;
+        margin-right: 0.93458%;
+        display: inline; } }
+
+.bottom-footer {
+  padding: 25px 0 0 0;
+  width: 100%;
+  float: left;
+  margin-right: 0.93458%;
+  display: inline; }
+  .bottom-footer .site-sub-links {
+    text-align: center; }
+
+body {
+  z-index: -1000;
+  background: #DCDBDD; }
+
+.top-content {
+  position: relative;
+  padding: 10px 0 0 0;
+  margin: 25px 0 0 0;
+  background: #F8F8F8;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4); }
+
+.top-content:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 10px;
+  border-radius: 70%;
+  z-index: -1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  width: 100%; }
+
+.title {
+  padding: 0 0 5px 10px; }
+
+.landing-image {
+  position: relative; }
+  .landing-image .office-hours {
+    top: -1px;
+    right: 75px;
+    padding: 20px 25px 10px 25px;
+    box-shadow: 0 -1px 3px #222222;
+    border: 5px solid #7587A6;
+    background: #ebebeb;
+    position: absolute;
+    display: inline; }
+    .landing-image .office-hours .title-divider {
+      width: 90%;
+      height: 2px;
+      margin: 10px 5%;
+      border-bottom: 1px solid #222222; }
+    .landing-image .office-hours p {
+      padding: 0 0 0 10px;
+      font-size: 16px; }
+  .landing-image .inner-arrow-down {
+    position: absolute;
+    bottom: -84px;
+    left: 0;
+    z-index: 100;
+    width: 0;
+    height: 0;
+    border-left: 133px solid transparent;
+    border-right: 133px solid transparent;
+    border-top: 84px solid #ebebeb; }
+  .landing-image .outer-arrow-down {
+    position: absolute;
+    bottom: -94px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-left: 137.5px solid transparent;
+    border-right: 137.5px solid transparent;
+    border-top: 89px solid #7587A6; }
+
+.navigation {
+  margin: 0 0 25px 0;
+  width: 100%;
+  border-top: 10px solid #7587A6;
+  border-bottom: 10px solid #7587A6; }
+  .navigation li {
+    padding: 0; }
+    .navigation li a {
+      color: #2176C7;
+      background: #F8F8F8;
+      padding: 25px 20px;
+      border-left: 2px solid #F8F8F8;
+      border-right: 2px solid #F8F8F8;
+      text-shadow: 0 0 0 #2176C7; }
+    .navigation li:hover a, .navigation li:focus a {
+      color: #222222;
+      transition: .2s color linear;
+      background: #7587A6;
+      transition: .2s background linear;
+      border-left: 2px solid #c4c4c4;
+      border-right: 2px solid #c4c4c4;
+      transition: .2s border linear;
+      text-shadow: 1px 1px 0 #292B33;
+      transition: .2s text-shadow linear; }
+
+.recent-news {
+  padding: 10px 15px; }
+  .recent-news .news-item {
+    padding: 10px 15px;
+    margin: 0 0 25px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    border: 10px solid #c4c4c4;
+    background: #d2d8e2; }
+    .recent-news .news-item p {
+      font-size: 20px; }
+
+.main-info {
+  padding: 0 2em 50px 2em; }
+  .main-info:last-child {
+    border-bottom: none; }
+  .main-info h2 {
+    margin: 0 0 10px 0;
+    font-size: 32px; }
+  .main-info p {
+    font-size: 20px; }
+
+.main-divider {
+  margin-left: 13%;
+  height: 10px;
+  width: 40%;
+  float: left;
+  border-bottom: 5px solid #b3bdce; }
+
+.practice-introduction a {
+  font-size: 20px; }
+
+.new-patient-intro {
+  padding: 50px 2em 0 2em; }
+
+footer {
+  padding: 0px 0 0 0;
+  margin: 50px 0 0 0; }
+  footer .foot-info-block {
+    padding: 10px 10px 10px 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  footer .top-footer {
+    padding: 0 0 25px 0;
+    z-index: -100;
+    position: relative; }
+    footer .top-footer p {
+      font-size: 16px; }
+    footer .top-footer .foot-location-info {
+      background: #F8F8F8; }
+    footer .top-footer .foot-divider {
+      margin-left: 10%;
+      height: 10px;
+      width: 25%;
+      top: 15px;
+      z-index: -1;
+      float: left;
+      border-bottom: 3px solid #7587A6;
+      position: absolute; }
+    footer .top-footer .foot-divider:nth-of-type(2) {
+      top: 25px;
+      margin-left: 20%; }
+    footer .top-footer .foot-divider:nth-of-type(3) {
+      top: 35px;
+      margin-left: 30%; }
+    footer .top-footer .foot-divider:nth-of-type(4) {
+      top: 45px;
+      margin-left: 40%; }
+    footer .top-footer .foot-divider:nth-of-type(5) {
+      top: 55px;
+      margin-left: 50%; }
+    footer .top-footer .foot-divider:nth-of-type(6) {
+      top: 65px;
+      margin-left: 60%; }
+    footer .top-footer .foot-contact-info {
+      background: #F8F8F8; }
+  footer .bottom-footer {
+    padding: 25px 0;
+    background: #F8F8F8; }
+    footer .bottom-footer .site-sub-links p {
+      font-size: 16px; }
+      footer .bottom-footer .site-sub-links p a {
+        font-size: 16px; }

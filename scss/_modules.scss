@@ -33,8 +33,8 @@ body {
 		right: 75px;
 		padding: 20px 25px 10px 25px;
 		box-shadow: 0 -1px 3px $black;
-		border: 5px solid $blue;
-		background: lighten($gray, 20);
+		border: 5px solid $lightblue;
+		background: lighten($gray, 25);
 		position: absolute;
 		display: inline;
 		.title-divider {
@@ -57,7 +57,7 @@ body {
 		height: 0;
 		border-left: 133px solid transparent;
 		border-right: 133px solid transparent;
-		border-top: 84px solid lighten($gray, 20);
+		border-top: 84px solid lighten($gray, 25);
 	}
 	.outer-arrow-down {
 		position: absolute;
@@ -67,7 +67,7 @@ body {
 		height: 0;
 		border-left: 137.5px solid transparent;
 		border-right: 137.5px solid transparent;
-		border-top: 89px solid $blue;
+		border-top: 89px solid $lightblue;
 	}
 }
 
@@ -112,6 +112,7 @@ body {
 	.news-item {
 		padding: 10px 15px;
 		margin: 0 0 25px 0;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 		border: 10px solid lighten($gray, 10);
 		background: lighten($lightblue, 30);
 		h3 {
@@ -163,7 +164,6 @@ footer {
 	margin: 50px 0 0 0;
 	.foot-info-block {
 		padding: 10px 10px 10px 25px;
-
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 	}
 	.top-footer {
@@ -184,7 +184,7 @@ footer {
 			top: 15px;
 			z-index: -1;
 			float: left;
-			border-bottom: 3px solid $blue;
+			border-bottom: 3px solid $lightblue;
 			position: absolute;
 
 		}
