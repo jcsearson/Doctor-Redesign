@@ -13,8 +13,3 @@ JavaScript and other js files in js/main were linted, minified, and combined int
 ### License
 
 This theme is not yet licensed.
-
-### SVG Icons - Author Credits
-
-	Facebook Icon
-		Icons made by Alessio Atzeni from www.flaticon.com is licensed by CC BY 3.0
