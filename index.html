@@ -26,18 +26,16 @@
 	</head>
 
 	<body>
-		<!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+
 	<div class="top-content">
 
 		<div class="head-container">
 
 
-			<header class="clearfix">
+			<header class="clearfix" role="banner">
 				<h1 class="title make-strong">Steven E. Caplan, MD</h1>
 				<div class="landing-image">
-					<section class="office-hours">
+					<section class="office-hours" role="region">
 						<h3>Hours of Operation:</h3>
 						<div class="title-divider"></div>
 						<p class="make-strong">Mon - Thur: 9am - 5pm</p>
@@ -50,8 +48,8 @@
 			</header>
 
 
-			<nav>
-				<ul class="navigation">
+			<nav role="navigation" aria-label="Main menu">
+				<ul class="navigation-menu">
 					<li class="navigation-item"><a href="#" class="top-row">Home</a></li>
 					<li class="navigation-item"><a href="#" class="top-row">About</a></li>
 					<li class="navigation-item"><a href="#" class="top-row">Contact</a></li>
@@ -65,46 +63,38 @@
 
 		</div>
 
-		<div class="main-container">
-			<section class="recent-news">
+		<main role="main">
+			<section class="recent-news" role="region">
 				<div class="news-item">
 					<h2>After-Hours On-Call changes began <span class="make-urgent">NOVEMBER 1, 2014!</span></h2>
-					<p>There have been important changes to the after-hours on-call arrangement for this office!  Each time your child has an urgent medical problem you must first phone the office at (410) 601-8383 to listen to a recording telling you the name and phone number of the pediatrician who is on call on that date.  Please go to the after-hours tab for more information.</p>
+					<p class="make-strong">There have been important changes to the after-hours on-call arrangement for this office!  Each time your child has an urgent medical problem you must first phone the office at (410) 601-8383 to listen to a recording telling you the name and phone number of the pediatrician who is on call on that date.  Please go to the after-hours tab for more information.</p>
 				</div>
 				<div class="news-item">
 					<h2>Winter is here!</h2>
-					<p>In case of inclement weather, please be sure to call the office to confirm that the office will be open, prior to leaving home.</p>
+					<p class="make-strong">In case of inclement weather, please be sure to call the office to confirm that the office will be open, prior to leaving home.</p>
 				</div>
 			</section>
 
-			<section class="practice-introduction main-info">
+			<section class="practice-introduction main-info" role="region">
 				<h2>Welcome to the Office of Steven E. Caplan!</h2>
 				<p>The office of Steven E.  Caplan M.D., PA. has provided the highest quality pediatric care in a warm, friendly and compassionate environment since 1988.  Our practice is proud to provide services to families of diverse racial, religious and socio-economic groups from birth to adulthood.  The friendly office staff is available to ensure that families receive assistance with all their needs.  The office is based on the campus of Sinai Hospital in Baltimore City, close to major highways and public transportation.    The practice includes Dr. Steven Caplan, Catherine Searson (Nurse Practitioner), Wendy Miller (Lactation Specialist) and Karen Mandwelle  Caplan (Clinical Social Worker).</p>
 				<p><a href="#">Please contact us for a consultation!</a></p>
 			</section>
 			<div class="main-divider"></div>
-			<section class="new-patient-intro main-info">
+			<section class="new-patient-intro main-info" role="region">
 				<h2>Attention New Patients:</h2>
 				<p>At this time new patients from 0 to 18 years of age are being accepted into the practice.  Health care services are provided to all our clients through their twenty-first year or until completion of college.  If you have any questions regarding our ability to meet the needs of your child, please call the office (410-601-8383) so that we may assist you. While we do accept most health insurance, please call our office to confirm that we accept yours.</p>
-				<p></p>
 			</section>
-		</div>  <!-- .main-container -->
-	</div>
+		</main>
 
-		<footer>
-			<section class="top-footer">
+		<footer role="contentinfo">
+			<section class="top-footer" role="region">
 				<div class="foot-location-info foot-info-block">
 					<h5>Steven E.  Caplan, MD</h5>
 					<p>2411 West Belvedere Avenue</p>
 					<p>Suite 508</p>
 					<p>Baltimore, MD 21215</p>
 				</div>
-				<div class="foot-divider"></div>
-				<div class="foot-divider"></div>
-				<div class="foot-divider"></div>
-				<div class="foot-divider"></div>
-				<div class="foot-divider"></div>
-				<div class="foot-divider"></div>
 				<div class="foot-contact-info foot-info-block">
 					<h5>Contact Information</h5>
 					<p>Phone: (410) 601-8383</p>
@@ -112,9 +102,9 @@
 					<p>E-mail: office@drstevencaplan.com</p>
 				</div>
 			</section>
-			<section class="bottom-footer foot-info-block">
+			<section class="bottom-footer" role="region">
 				<div class="site-sub-links">
-					<p>Steven E. Caplan, MD |  <a href="#">Disclaimer</a> | <a href="#">About</a> | <a href="#">Contact</a></p>
+					<p>Steven E. Caplan, MD |  <a href="#">Disclaimer</a> | <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Pay Bills</a> | <a href="#">After-hours</a> | <a href="#">Referrals</a></p>
 				</div>
 			</section>
 		</footer>

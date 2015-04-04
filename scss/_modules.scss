@@ -4,14 +4,13 @@ body {
 }
 
 .top-content {
-	position: relative;
 	padding: 10px 0 0 0;
 	margin: 25px 0 0 0;
-	background: $white;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+	background: $white;
+	position: relative;
 }
 .top-content:after {
-	position: absolute;
 	left: 0;
 	bottom: 0;
 	content: "";
@@ -20,20 +19,29 @@ body {
 	z-index: -1;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 	width: 100%;
+	position: absolute;
+}
+
+main {
+	padding: 50px 0 0 0;
+	box-shadow: 0 -30px 50px -30px rgba(0, 0, 0, 0.8);
+	float: left;
 }
 
 .title {
-	padding: 0 0 5px 10px;
+	padding: 15px 0 15px 15px;
+	text-shadow: 1px 1px 2px $black;
 }
 
 .landing-image {
 	position: relative;
+	box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 	.office-hours {
 		top: -1px;
 		right: 75px;
 		padding: 20px 25px 10px 25px;
 		box-shadow: 0 -1px 3px $black;
-		border: 5px solid $lightblue;
+		border: 5px solid $blue;
 		background: lighten($gray, 25);
 		position: absolute;
 		display: inline;
@@ -49,42 +57,48 @@ body {
 		}
 	}
 	.inner-arrow-down {
-		position: absolute;
 		bottom: -84px;
-		left: 0;
+		left: -1px;
 		z-index: 100;
 		width: 0;
 		height: 0;
+		border-top: 85px solid lighten($gray, 25);
 		border-left: 133px solid transparent;
 		border-right: 133px solid transparent;
-		border-top: 84px solid lighten($gray, 25);
+		position: absolute;
 	}
 	.outer-arrow-down {
-		position: absolute;
 		bottom: -94px;
 		right: -5px;
 		width: 0;
 		height: 0;
+		border-top: 89px solid $blue;
 		border-left: 137.5px solid transparent;
 		border-right: 137.5px solid transparent;
-		border-top: 89px solid $lightblue;
+		position: absolute;
 	}
 }
 
-.navigation {
-	margin: 0 0 25px 0;
+nav {
+	box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.4),
+				     5px 0 5px -5px rgba(0, 0, 0, 0.4);
+	@include clearfix;
+}
+
+.navigation-menu {
 	width: 100%;
-	border-top: 10px solid $lightblue;
-	border-bottom: 10px solid $lightblue;
-	li {
+	background: $blue;
+	float: left;
+	text-align: center;
+	.navigation-item {
 		padding: 0;
+		display: inline-block;
 		a {
-			color: $blue;
-			background: $white;
-			padding: 25px 20px;
-			border-left: 2px solid $white;
-			border-right: 2px solid $white;
-			text-shadow: 0 0 0 $blue;
+			padding: 25px 15px 40px 15px;
+			font-size: $font-small;
+			color: $white;
+			background: $blue;
+			text-transform: uppercase;
 			.top-row {
 
 			}
@@ -95,13 +109,8 @@ body {
 		&:hover a, &:focus a {
 			color: $black;
 			transition: .2s color linear;
-			background: $lightblue;
+			background: $white;
 			transition: .2s background linear;
-			border-left: 2px solid lighten($gray, 10);
-			border-right: 2px solid lighten($gray, 10);
-			transition: .2s border linear;
-			text-shadow: 1px 1px 0 $marqueblue;
-			transition: .2s text-shadow linear;
 		}
 
 	}
@@ -113,13 +122,13 @@ body {
 		padding: 10px 15px;
 		margin: 0 0 25px 0;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-		border: 10px solid lighten($gray, 10);
+		border: 10px solid $blue;
 		background: lighten($lightblue, 30);
 		h3 {
 
 		}
 		p {
-			font-size: $font-med;
+			font-size: $font-small;
 		}
 	}
 }
@@ -159,17 +168,18 @@ body {
 }
 
 footer {
-	//background: $white;
-	padding: 0px 0 0 0;
+	padding: 50px 0 0 0;
 	margin: 50px 0 0 0;
+	border-radius: 50% 50% 0 0;
+	min-height: 100px;
+	box-shadow: 0 -5px 10px -1px rgba(0, 0, 0, 0.6);
+	background: $blue;
 	.foot-info-block {
 		padding: 10px 10px 10px 25px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+		box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.6);
 	}
 	.top-footer {
 		padding: 0 0 25px 0;
-		z-index: -100;
-		//background: $mediumgray;
 		position: relative;
 		p {
 			font-size: $font-small;
@@ -177,48 +187,17 @@ footer {
 		.foot-location-info {
 			background: $white;
 		}
-		.foot-divider {
-			margin-left: 10%;
-			height: 10px;
-			width: 25%;
-			top: 15px;
-			z-index: -1;
-			float: left;
-			border-bottom: 3px solid $lightblue;
-			position: absolute;
-
-		}
-		.foot-divider:nth-of-type(2) {
-			top: 25px;
-			margin-left: 20%;
-		}
-		.foot-divider:nth-of-type(3) {
-			top: 35px;
-			margin-left: 30%;
-		}
-		.foot-divider:nth-of-type(4) {
-			top: 45px;
-			margin-left: 40%;
-		}
-		.foot-divider:nth-of-type(5) {
-			top: 55px;
-			margin-left: 50%;
-		}
-		.foot-divider:nth-of-type(6) {
-			top: 65px;
-			margin-left: 60%;
-		}
 		.foot-contact-info {
 			background: $white;
 		}
 	}
 	.bottom-footer {
 		padding: 25px 0;
-		background: $white;
 		.site-sub-links {
 			p {
 				font-size: $font-small;
 				a {
+					color: $black;
 					font-size: $font-small;
 				}
 			}
