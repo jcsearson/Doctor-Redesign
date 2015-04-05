@@ -4,7 +4,7 @@ body {
 }
 
 .top-content {
-	padding: 10px 0 200px 0;
+	padding: 0 0 200px 0;
 	margin: 25px 0 0 0;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 	z-index: -100;
@@ -19,18 +19,21 @@ main {
 }
 
 .title {
-	padding: 15px 0 15px 15px;
+	padding: 15px 0 25px 15px;
 	text-shadow: 1px 1px 2px $black;
+	color: $white;
+	background: $blue;
 }
 
 .landing-image {
+	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.4),
+				   0 10px 10px rgba(0, 0, 0, 0.4);
 	position: relative;
-	box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 	.office-hours {
 		top: -1px;
 		right: 75px;
 		padding: 20px 25px 10px 25px;
-		box-shadow: 0 -1px 3px $black;
+		box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
 		border: 5px solid $blue;
 		background: lighten($gray, 25);
 		position: absolute;
@@ -82,7 +85,7 @@ nav {
 	text-align: center;
 	.navigation-item {
 		padding: 0;
-		width: ((100%) / 7) - 0.5;
+		width: ((100%) / 7) - 1.5;
 		display: inline-block;
 		a {
 			padding: 25px 0 40px 0;
@@ -113,7 +116,7 @@ nav {
 	.news-item {
 		padding: 10px 15px;
 		margin: 0 0 25px 0;
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+		box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.8);
 		border: 10px solid $blue;
 		background: lighten($lightblue, 30);
 		h3 {
@@ -164,12 +167,14 @@ footer {
 	margin: -125px 0 0 0;
 	//border-radius: 40% 40% 0 0;
 	min-height: 100px;
-	box-shadow: inset 0 10px 15px -1px rgba(0, 0, 0, 0.6);  // remove inset if border-radius
+	box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.4),  // remove inset if border-radius
+						-1px 0 1px 0 rgba(0, 0, 0, 0.4),
+						1px 0 1px 0 rgba(0, 0, 0, 0.4);
 	background: $blue;
 	.foot-info-block {
 		padding: 10px 10px 10px 25px;
-		box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.6),
-					   0 -5px 15px 5px rgba(0, 0, 0, 0.6);
+		box-shadow: 0 5px 10 rgba(0, 0, 0, 0.4),
+					   0 -5px 10px rgba(0, 0, 0, 0.4);
 	}
 	.top-footer {
 		padding: 25px 0;
@@ -177,16 +182,19 @@ footer {
 			font-size: $font-small;
 		}
 		.foot-location-info {
-			box-shadow: 7px 0 15px 1px rgba(0, 0, 0, 0.6);
+			box-shadow: 4px 0 15px 1px rgba(0, 0, 0, 0.6);
 			background: $white;
 		}
 		.foot-contact-info {
-			box-shadow: -7px 0 15px 1px rgba(0, 0, 0, 0.6);
+			box-shadow: -4px 0 15px 1px rgba(0, 0, 0, 0.6);
 			background: $white;
 		}
 	}
 	.bottom-footer {
 		padding: 25px 0;
+		margin: 25px 0 0 0;
+		box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.4);
+		background: $white;
 		.site-sub-links {
 			p {
 				font-size: $font-small;
