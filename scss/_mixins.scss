@@ -35,7 +35,7 @@
     @media (max-width: 1000px) { @content; }
   }
   @if $point == uranus {
-    @media (min-width: 1000px) { @content; }
+    @media (max-width: 1000px) { @content; }
   }
   @if $point == jupiter {
     @media (max-width: 925px) { @content; }
