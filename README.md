@@ -2,7 +2,12 @@
 
 This design was intended to be used with my client <a href="http://drstevencaplan.com">Steven E. Caplan's website</a>, a place to disclose all information about his medical practice.
 
+### Desktop Sample
 ![DrStevenCaplan.com Screenshot](http://i.imgur.com/Nobbu2G.png?1)
+### Laptop Sample
+![DrStevenCaplan.com Screenshot](http://i.imgur.com/S1nHGvv.png?1)
+### Mobile Sample
+![DrStevenCaplan.com Screenshot](http://i.imgur.com/kDwwwsM.png?1)
 
 ### Design Notes
 
