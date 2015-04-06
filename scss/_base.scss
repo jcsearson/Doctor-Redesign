@@ -55,8 +55,13 @@ li {
 }
 
 // Makes a piece of text stand out within a body of text
-.make-strong {
+em {
 	font-weight: 700;
+}
+
+// Makes a piece of text all uppercase characters
+.cap {
+	text-transform: uppercase;
 }
 
 // Makes a piece of text portray a sense of urgency
@@ -64,6 +69,10 @@ li {
 	font-weight: 700;
 	color: $red;
 	text-transform: uppercase;
+}
+
+i {
+	font-style: italic;
 }
 
 // Makes a piece of text fade out like a note to be added at end of body of text

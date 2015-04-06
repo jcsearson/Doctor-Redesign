@@ -1,0 +1,71 @@
+.thumb-container {
+	width: 120px;
+	height: 120px;
+	margin: 10px 25px 10px 0;
+	border: 5px solid $gray;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 2px $black;
+	float: left;
+	position: relative;
+	.missing-thumb {
+		position: absolute;
+		top: 17px;
+		left: 17px;
+		fill: $black;
+		width: 75px;
+	}  /* .missing-thumb */
+}  /* .thumb-container */
+
+.staff-entry {
+	.staff-title {
+		padding: 0 0 15px;
+		font-size: $font-xxxl!important;
+		text-shadow: 1px 1px 1px $black;
+		@include bp(earth) {
+			font-size: $font-xl!important;
+		}
+		> i {
+			font-size: $font-large;
+			color: $gray;
+		}
+	}  /* .staff-title */
+	p {
+		font-size: $font-large;
+	}
+	.staff-bar {
+		margin-bottom: 50px;
+	}
+}  /* .staff-entry */
+
+//  Inserting face-shot image for each staff member accordingly
+.steve {
+	background: url('../images/content/staff/caplan-thumb.png');
+}
+
+.catherine {
+	background: $blue;
+}
+
+.karen {
+	background: $blue;
+}
+
+.wendy {
+	background: $blue;
+}
+
+.devonn {
+	background: $blue;
+}
+
+.kimberly {
+	background: $blue;
+}
+
+.vanessa {
+	background: $blue;
+}
+
+.candice {
+	background: $blue;
+}

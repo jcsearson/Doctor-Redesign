@@ -120,6 +120,7 @@ nav {
 			}
 			.svg-icon {
 				fill: $white;
+				width: 50px;
 				@include bp(venus) {
 					width: 25px;
 				}
@@ -185,9 +186,19 @@ nav {
 		box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.8);
 		border: 10px solid $blue;
 		background: lighten($lightblue, 30);
+		h3 {
+			padding: 0 0 10px 0;
+			text-align: center;
+		}
 		p {
 			font-size: $font-small;
 		}
+		.news-divider {
+			height: 2px;
+			width: 60%;
+			margin: 0 20% 15px 20%;
+			border-bottom: 1px solid $black;
+		}  /* .news-divider */
 	}  /* .news-item */
 }  /* .recent-news */
 
