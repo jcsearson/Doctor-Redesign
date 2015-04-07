@@ -1,0 +1,146 @@
+.pre-form-block {
+	padding: 0 5em 50px 5em;
+	h2 {
+		padding: 0 0 10px 0;
+	}  /* h2 */
+	h4 {
+		padding: 0 0 10px 0;
+		margin: 0 0 10px 0;
+		color: $gray;
+		border-bottom: 2px solid $gray;
+		font-style: italic;
+	}  /* h4 */
+	p {
+		padding: 0 0 25px 0;
+		font-size: $font-med;
+		&:last-child {
+			padding: 0 0 10px 0;
+			border-bottom: 2px solid $gray;
+		}
+	}  /* p */
+}  /* .pre-form-block */
+
+.form-block {  /* <section></section> */
+	padding: 0 5em 50px 5em;
+	.main-contact-form {  /* <form></form> */
+		.contact-form-head {  /* <header></header> */
+			padding: 0 0 25px 0;
+			h2 {
+				padding: 0 0 10px 0;
+			}  /* h2 */
+			p {
+				padding: 0 0 10px 0;
+				font-size: $font-med;
+			}  /* p */
+		}  /* .contact-form-head */
+		.contact-form-body {  /* <ul></ul> */
+			width: 90%;
+			padding: 25px;
+			margin: 0 5%;
+			background: $mediumgray;
+			border: 4px solid $black;
+			.submission-item {  /* <li></li> all items including button */
+				padding: 0 0 25px 0;
+				label {
+					font-weight: 700;
+					padding: 0 0 5px 0;
+					font-size: $font-large;
+					display: block;
+				}  /* outer-label */
+				.input-field {
+					> input {
+						font-size: $font-large;
+						border: 1px solid $black;
+					}
+					> label {
+						font-weight: 300;
+						color: $gray;
+						display: inline-block;
+					}  /* inner-label (first/last name) */
+					> textarea {
+						padding: 10px 15px;
+						font-size: $font-large;
+					}  /* textarea  (for message box) */
+					input::-webkit-input-placeholder {
+						padding: 2px 0 0 0;
+						font-size: $font-med;
+						color: $gray;
+						text-align: center;
+					}  /* placeholder text */
+					input:focus::-webkit-input-placeholder {
+						opacity: 0;
+						transition: 0.2s opacity linear;
+					}  /* placeholder effects once input selected */
+				}  /* .input-field */
+				.checkbox {
+					> label {
+						color: $black;
+					}  /* label */
+				}  /* .checkbox */
+			}  /* .submission-item */
+			.button {  /* button to submit form */
+				.submit {  /* <span></span> */
+					button {  /* <button></button> */
+						width: 200px;
+						height: 50px;
+						line-height: 1;
+						background: $white;
+						font-size: $font-large;
+						border: 2px solid $black;
+						cursor: pointer;
+						&:hover, &:focus {
+							background: $gray;
+							transition: 0.2s background linear;
+						}
+					}
+				}  /* .submit */
+			}  /* .button */
+		}  /* .contact-form-body */
+	}  /* .main-contact-form */
+}  /* .form-block */
+
+.contact-submission-container {
+	padding: 25px;
+	margin: 0 1.25em;
+	line-height: 1.2;
+	font-size: $font-large;
+	background: $mediumgray;
+	border: 4px solid $black;
+	position: relative;
+	@include bp(venus) {
+		padding: 10px;
+		font-size: $font-med;
+	}
+	.return-address {
+		font-weight: 700;
+		line-height: 1;
+		float: right;
+		.signature {
+			display: block;
+			.address-stamp {
+				font-weight: 300;
+				padding: 5px 5px 0 5px;
+				margin: 5px 0 0 0;
+				font-size: $font-med;
+				border-top: 1px solid $black;
+			}/* .address-stamp */
+		}  /* .signature */
+		.time-stamp {
+			font-weight: 300;
+			padding: 0 5px;
+			font-size: $font-small;
+			color: lighten($black, 25);
+			font-style: italic;
+			.clock {
+				bottom: 5px;
+				left: 10px;
+				position: absolute;
+			}
+			.calendar {
+				bottom: 5px;
+				right: 10px;
+				position: absolute;
+			}
+		}  /* .time-stamp */
+	}  /* .return-address */
+}  /* .contact-submission-container */

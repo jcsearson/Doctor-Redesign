@@ -66,6 +66,17 @@ body {
 	}
 }
 
+.contact-page {
+	@include span-columns(12, 12);
+}
+
+.contact-submission-container {
+	@include span-columns(7 omega, 12);
+	@include bp(drummer) {
+		@include span-columns(10, 12);
+	}
+}
+
 footer {
 	@include span-columns(12, 12);
 }
