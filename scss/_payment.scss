@@ -4,26 +4,24 @@
 	position: relative;
 	.payment-button {
 		padding: 15px 0 5px 0;
-		@include bp(earth) {
-			margin: 0 1em;
-		}
 		width: 200px;
 		height: 60px;
 		border-radius: 5px;
 		background: $white;
 		color: $black;
+		font-size: $font-med;
 		border: 5px solid $blue;
 		text-transform: none;
 		text-align: center;
+		@include bp(earth) {
+			margin: 0 1em;
+		}
 		&:hover, &:focus {
 			background: $blue;
-			transition: .2s background linear;
 			color: $white;
-			transition: .2s color linear;
 			border: 5px solid $black;
-			transition: .2s border linear;
 			text-transform: uppercase;
-			transition: .2s text-transform linear;
+			transition: 0.2s all linear;
 		}
 	}  /* .payment-button */
 	.button-strike {

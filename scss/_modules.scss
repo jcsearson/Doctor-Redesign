@@ -4,7 +4,6 @@ body {
 
 .top-content {
 	padding: 0 0 200px 0;
-	//margin: 25px 0 0 0;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 	z-index: -100;
 	background: $white;
@@ -118,8 +117,8 @@ nav {
 				display: inline-block;
 			}
 			.svg-icon {
-				fill: $white;
 				width: 50px;
+				fill: $white;
 				@include bp(venus) {
 					width: 25px;
 				}
@@ -132,9 +131,8 @@ nav {
 		}  /* .nav-txt-item */
 		&:hover a, &:focus a {
 			color: $black;
-			transition: .2s color linear;
 			background: $white;
-			transition: .2s background linear;
+			transition: .2s all linear;
 		}
 		&:hover .svg-anchor .svg-icon, &:focus .svg-anchor .svg-icon {
 			fill: $black;
@@ -150,9 +148,8 @@ nav {
 					color: $white;
 					&:hover, &:focus {
 						background: $white;
-						transition: .2s background linear;
 						color: $black;
-						transition: .2s color linear;
+						transition: .2s all linear;
 					}
 				}
 			}  /* .dropdown-item */
@@ -226,8 +223,8 @@ nav {
 	margin-left: 13%;
 	height: 10px;
 	width: 40%;
-	float: left;
 	border-bottom: 1px solid $gray;
+	float: left;
 }  /* .main-divider */
 
 .main-info-upper {
@@ -247,10 +244,10 @@ footer {
 	padding: 50px 0 0 0;
 	margin: -125px 0 0 0;
 	min-height: 100px;
+	background: $blue;
 	box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.4),
 						-1px 0 1px 0 rgba(0, 0, 0, 0.4),
 						1px 0 1px 0 rgba(0, 0, 0, 0.4);
-	background: $blue;
 	.foot-info-block {
 		padding: 10px 10px 10px 25px;
 		box-shadow: 0 5px 10 rgba(0, 0, 0, 0.4),

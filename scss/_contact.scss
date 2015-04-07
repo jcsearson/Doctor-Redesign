@@ -84,15 +84,18 @@
 						width: 200px;
 						height: 50px;
 						line-height: 1;
+						border-radius: 25px;
+						box-shadow: 0 0 3px 1px $black;
 						background: $white;
-						font-size: $font-large;
-						border: 2px solid $black;
+						font-size: $font-med;
+						border: 1px solid $black;
+						text-transform: uppercase;
 						cursor: pointer;
 						&:hover, &:focus {
-							background: $gray;
-							transition: 0.2s background linear;
+							box-shadow: inset 0 0 5px 2px $black;
+							transition: 0.2s all linear;
 						}
-					}
+					}  /* <button></button> */
 				}  /* .submit */
 			}  /* .button */
 		}  /* .contact-form-body */
@@ -135,12 +138,12 @@
 				bottom: 5px;
 				left: 10px;
 				position: absolute;
-			}
+			}  /* .clock */
 			.calendar {
 				bottom: 5px;
 				right: 10px;
 				position: absolute;
-			}
+			}  /* .calendar */
 		}  /* .time-stamp */
 	}  /* .return-address */
 }  /* .contact-submission-container */
