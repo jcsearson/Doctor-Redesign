@@ -1,7 +1,5 @@
 <?php include("parts/doctype.php"); ?>
 
-<body>
-
 	<div class="top-content">
 		<div class="head-container">
 			<?php include("parts/header.php"); ?>
@@ -19,12 +17,9 @@
 
 			<section class="payment-container main-info-lower" role="region">
 				<div class="button-strike"></div>
-				<a class="payment-button" href="https://payments.paysimple.com/Login/CheckOutFormLogin/0oPz5QsDaDXLHxc8TrKpOhEHI1Y-">Pay Online!</a>  <!-- .payment-button -->
+				<a class="payment-button" href="https://payments.paysimple.com/Login/CheckOutFormLogin/0oPz5QsDaDXLHxc8TrKpOhEHI1Y-" target="_blank">Pay Online!</a>  <!-- .payment-button -->
 			</section>  <!-- .payment-container  .main-info-lower -->
 		</main>
 	</div>  <!-- .top-content -->
 
-	<?php include("parts/footer.php"); ?>
-
-</body>
-</html>
+<?php include("parts/footer.php"); ?>

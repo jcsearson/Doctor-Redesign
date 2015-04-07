@@ -1,5 +1,7 @@
+<body>
+
 <header class="clearfix" role="banner">
-	<h1 class="title make-strong">Steven E. Caplan, MD</h1>
+	<h1 class="title"><em>Steven E. Caplan, MD</em></h1>
 	<div class="landing-image">
 		<section class="office-hours" role="region">
 			<h3>Hours of Operation:</h3>

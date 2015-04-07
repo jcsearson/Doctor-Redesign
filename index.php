@@ -1,7 +1,5 @@
 <?php include("parts/doctype.php"); ?>
 
-<body>
-
 	<div class="top-content">
 		<div class="head-container">
 			<?php include("parts/header.php"); ?>
@@ -26,7 +24,4 @@
 		</main>
 	</div>  <!-- .top-content -->
 
-	<?php include("parts/footer.php"); ?>
-
-</body>
-</html>
+<?php include("parts/footer.php"); ?>
