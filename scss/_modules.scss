@@ -1,5 +1,4 @@
 body {
-	z-index: -1000;
 	background: $mediumgray;
 }
 
@@ -21,8 +20,8 @@ main {
 .title {
 	padding: 15px 0 25px 15px;
 	text-shadow: 1px 1px 2px $black;
-	color: $white;
-	background: $blue;
+	color: $black;
+	background: $white;
 	@include bp(venus) {
 		padding: 15px 0 25px 0;
 		font-size: $font-xl;
@@ -31,7 +30,7 @@ main {
 }  /* .title */
 
 .landing-image {
-	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.4),
+	box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4),
 				   0 10px 10px rgba(0, 0, 0, 0.4);
 	position: relative;
 	@include bp(venus) {
@@ -179,7 +178,7 @@ nav {
 }  /* .navigation-menu */
 
 .recent-news {
-	padding: 10px 15px;
+	padding: 0 15px 10px 15px;
 	.news-item {
 		padding: 10px 15px;
 		margin: 0 0 25px 0;
@@ -215,6 +214,7 @@ nav {
 		}
 	}
 	p {
+		padding: 0 0 25px 0;
 		font-size: $font-med;
 		@include bp(venus) {
 			font-size: $font-small;
