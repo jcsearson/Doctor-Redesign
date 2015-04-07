@@ -7,7 +7,7 @@
 	<!-- Metas -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
-	<title>Steven Caplan, M.D.</title>
+	<title>Steven E. Caplan, M.D.</title>
       	<meta name="description" content="The Template for Steven Caplan, MD">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Stylesheets -->

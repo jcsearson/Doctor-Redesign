@@ -1,3 +1,6 @@
+	</main>
+</div>  <!-- .top-content -->
+
 <footer role="contentinfo">
 	<section class="top-footer" role="region">
 		<div class="foot-location-info foot-info-block">
