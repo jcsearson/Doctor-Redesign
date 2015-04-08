@@ -10,6 +10,8 @@
 
 	<?php get_sidebar(); ?>
 
+<!-- <div class="thumb-container karen"><?php /*echo*/ /*file_get_contents("images/svg/missing-thumb.svg"*/); ?></div> -->
+
 	<section class="main-info about-page-intro" role="region">
 		<h2>Meet Our Staff!!!</h2>
 		<p><em>It is important to us that you feel comfortable from the moment you step through our doors to the time that you leave us.  Our outstanding staff will make this time an easy one for both the child and parent!</em></p>
