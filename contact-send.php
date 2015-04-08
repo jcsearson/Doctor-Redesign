@@ -1,22 +1,3 @@
-<?php
-	$year = date( 'Y' );
-	$month = date( 'F' );
-	$day = date( 'l' );
-	$dayNumb = date( 'j' );
-	$hour = date( 'h' );
-	$minute = date( 'i' );
-
-	if ( (date( 'H' )) >= '12' && ( (date( 'H' )) < '24') ) {
-		$timeOfDay = ' pm';
-	} else {
-		$timeOfDay = ' am';
-	}
-
-	$time = (int)$hour . ' : ' . $minute;
-	$time .= $timeOfDay;
-	$timestamp = $day . ' ' . $month . ' ' . $dayNumb . ', ' . $year;
-?>
-
 <?php include("parts/doctype.php"); ?>
 
 	<?php include("parts/header.php"); ?>
