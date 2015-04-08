@@ -19,9 +19,11 @@
 
 		<?php  // specifications for posts
 			$args = array(
-				'post_type'				=> 'resources',
-			   	'posts_per_page'      	=> '-1',
-			   	'status'					=> 'published'
+			'post_type'				=> 'resources',
+		   	'posts_per_page'      	=> '-1',
+		   	'orderby'				=> 'meta_value',
+		   	'order'					=> 'ASC',
+		   	'status'					=> 'published'
 			);
 		?>
 		<?php $query = new WP_Query($args); ?>

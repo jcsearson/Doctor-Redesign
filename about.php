@@ -10,8 +10,6 @@
 
 	<?php get_sidebar(); ?>
 
-<!-- <div class="thumb-container karen"><?php /*echo*/ /*file_get_contents("images/svg/missing-thumb.svg"*/); ?></div> -->
-
 	<section class="main-info about-page-intro" role="region">
 		<h2>Meet Our Staff!!!</h2>
 		<p><em>It is important to us that you feel comfortable from the moment you step through our doors to the time that you leave us.  Our outstanding staff will make this time an easy one for both the child and parent!</em></p>
@@ -21,6 +19,8 @@
 		$args = array(
 			'post_type'				=> 'employees',
 		   	'posts_per_page'      	=> '-1',
+		   	'orderby'				=> 'meta_value',
+		   	'order'					=> 'ASC',
 		   	'status'					=> 'published'
 		);
 	?>
@@ -32,13 +32,11 @@
 			<h2 class="staff-title"><?php the_field('employee_name'); ?> <span class="credentials"><i><?php the_field('employee_certification'); ?></i></span></h2>
 			<?php
 				if ( the_field('employee_photo') ) {
-					$imageVar = the_field('employee_photo');
+					echo '<div class="thumb-container">' . the_field('employee_photo') . '</div>';
 				} else {
-					$imageVar = echo file_get_contents("echo get_template_directory_uri();/images/svg/missing-thumb.svg");
+					echo '<div class="thumb-container"></div>';
 				}
 			?>
-			<div class="thumb-container"><?php $imageVar; ?></div>
-			<?php unset($imageVar); ?>
 		</div>
 		<div class="staff-history">
 			<p><?php the_field('employee_biography'); ?></p>
