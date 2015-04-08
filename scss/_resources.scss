@@ -1,0 +1,38 @@
+.resource-container {
+	padding: 0 2em;
+	.single-resource {
+		position: relative;
+		margin: 0 0 50px 0;
+		.resource-name {
+			top: -20px;
+			left: 30px;
+			padding: 5px 10px;
+			border: 5px solid $blue;
+			background: $white;
+			font-size: $font-large;
+			position: absolute;
+			@include bp(venus) {
+				font-size: $font-med;
+			}
+			&:hover, &:focus {
+				border: 5px solid $black;
+				transition: 0.2s border linear;
+				cursor: pointer;
+			}
+			&:hover .resource-link, &:focus .resource-link {
+				color: $black;
+				transition: 0.2s color linear;
+			}  /* .resource-link */
+		}  /* .resource-name */
+		.resource-description {
+			padding: 30px 10px 10px 10px;
+			color: $white;
+			background: $blue;
+			border: 5px solid $blue;
+			font-size: $font-med;
+			@include bp(venus) {
+				font-size: $font-small;
+			}
+		}  /* .resource-description */
+	}  /* .single-resource */
+}/* .resource-container */
