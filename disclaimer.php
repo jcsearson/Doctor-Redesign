@@ -1,7 +1,7 @@
 <?php
 
 	/*
-		Template Name: Index
+		Template Name: Disclaimer
 	*/
 	/*This template is the site's disclaimer page.*/
 ?>
