@@ -1,109 +1,128 @@
+.about-page-intro {
+	//padding: 0;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+	 > h2 {
+	 	font-size: $font-large;
+		text-align: center;
+		text-transform: uppercase;
+	 }  /* <h2></h2> */
+	 > p {
+		text-align: center;
+	 }  /* <p></p> */
+}  /* .about-page-intro */
+
 .staff-entry {
+	margin: 0 0 75px 0;
+	position: relative;
 	@include bp(drummer) {
 		width: 100%;
 	}
+	@include bp(venus) {
+		margin: 0 0 25px 0;
+	}
 	.staff-head-block {
-		position: relative;
-		@include clearfix;
+		top: -25px;
+		width: 85%;
+		position: absolute;
 		.staff-title {
-			padding: 40px 0 15px 0;
-			font-size: $font-xxl!important;
+			padding: 10px 15px 5px 15px;
+			margin: 50px 0 15px 35px;
+			font-weight: 700;
+			font-size: $font-med!important;
+			color: $black;
+			background: $white;
+			border: 5px solid $lightblue;
+			text-transform: uppercase;
 			float: left;
-			@include clearfix;
-			@include bp(neptune) {
-				font-size: $font-large!important;
-			}
+			display: inline-block;
 			@include bp(venus) {
-				font-size: $font-med!important;
+				margin: 50px 0 15px 25px;
+				font-size: $font-small!important;
 			}
 			.credentials {
-				font-size: $font-med;
 				color: $gray;
+				font-size: $font-med;
 				@include bp(venus) {
-					font-size: $font-med;
+					font-size: $font-small;
 				}
-			}
+			}  /* .credentials */
 		}  /* .staff-title */
 		.thumb-container {
 			width: 120px;
 			height: 120px;
 			margin: 10px 25px 10px 0;
-			border: 5px solid $gray;
+			top: 5px;
+			right: 5px;
 			border-radius: 50%;
-			box-shadow: 0 0 5px 2px $black;
-			float: right;
-			position: relative;
+			border: 7px solid $lightblue;
+			//box-shadow: 0 0 5px 2px $black;
+			position: absolute;
 			@include bp(venus) {
 				display: none;
 			}
 			.missing-thumb {
-				position: absolute;
 				top: 17px;
-				left: 17px;
-				fill: $black;
+				left: 15px;
 				width: 75px;
+				fill: $black;
+				position: absolute;
 			}  /* .missing-thumb */
 		}  /* .thumb-container */
-		.head-strike {
-			position: absolute;
-			top: 75px;
-			z-index: -99;
-			width: 100%;
-			height: 5px;
-			border-bottom: 4px solid $gray;
-		}
 	}  /* .staff-head-block */
-	p {
-		padding: 0 0 25px 0;
+	.staff-history {
+		padding: 60px 10px 10px 10px;
 		width: 100%;
-		font-size: $font-large;
+		background: $lightblue;
+		border: 4px solid $lightblue;
 		float: left;
-		&:last-child {
-			padding: 0 0 0 0;
-		}
-		@include bp(neptune) {
-			font-size: $font-med;
-		}
 		@include bp(venus) {
-			//padding: 0 0 15px 0;
-			font-size: $font-small;
+			padding: 25px 10px 10px 10px;
 		}
-	}
-	.staff-bar {
-		margin-bottom: 50px;
-	}
+		> p {
+			padding: 0 0 25px 0;
+			color: $white;
+			font-size: $font-med;
+			@include bp(venus) {
+				font-size: $font-small;
+			}
+			&:last-child {
+				padding: 0;
+			}
+		}  /* <p></p> */
+	}  /* .staff-history */
 }  /* .staff-entry */
 
 // breakpoint(neptune)
 //  Inserting face-shot image for each staff member accordingly
 .steve {
-	background: url('../images/content/staff/caplan-thumb.png');
+	background: url('../images/content/staff/steve-thumb.png');
 }
 
 .catherine {
-	background: $blue;
+	background: url('../images/content/staff/catherine-thumb.png');
 }
 
 .karen {
-	background: $blue;
+	background: $lightblue;
 }
 
 .wendy {
-	background: $blue;
+	background: $lightblue;
 }
 
 .devonn {
-	background: $blue;
+	background: $lightblue;
 }
 
 .kimberly {
-	background: $blue;
+	background: $lightblue;
 }
 
 .vanessa {
-	background: $blue;
+	background: $lightblue;
 }
 
 .candice {
-	background: $blue;
+	background: $lightblue;
 }
