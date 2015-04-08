@@ -19,7 +19,6 @@
 					<li class="dropdown-item"><a href="/payment.php">Pay Online</a></li>
 					<li class="dropdown-item"><a href="/new-patients.php">New Patients</a></li>
 					<li class="dropdown-item"><a href="/after-hours.php">After-hours</a></li>
-					<li class="dropdown-item"><a href="/referrals.php">Referrals</a></li>
 					<li class="dropdown-item"><a href="/resources.php">Resources</a></li>
 				</ul>  <!-- .dropdown-menu -->
 			</li>  <!-- .navigation-item  .dropdown-ignition -->
@@ -30,7 +29,7 @@
 				<a href="/after-hours.php" class="nav-txt-item">After-hours</a>
 			</li>
 			<li class="navigation-item item-to-dropdown">
-				<a href="/referrals.php" class="nav-txt-item">Referrals</a>
+				<a href="/resources.php" class="nav-txt-item">Resources</a>
 			</li>
 		</ul>  <!-- .navigation-menu -->
 	</nav>
