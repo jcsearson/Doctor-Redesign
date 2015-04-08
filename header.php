@@ -18,7 +18,7 @@
 	<title>Steven E. Caplan, M.D.</title>
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri();?>/favicons/apple-touch-icon-180x180.png">
 
 	<?php wp_head(); ?>  <!-- e.g. jQuery -->
 
