@@ -16,18 +16,18 @@
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<section class="resource-container" role="region">
+
+		<?php $query = new WP_Query( 'post_type=resources' ); ?>
+		<?php if ($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
+
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="http://www.webmd.com/" class="resource-link" target="_blank">Resource#1</a></h4>
-			<p class="resource-description">A description of what this resource can be used for and any other pertinent information.</p>
+			<h4 class="resource-name"><a href="<?php the_field('resource_link'); ?>" class="resource-link" target="_blank"><?php the_field('resource_name'); ?></a></h4>
+			<p class="resource-description"><?php the_field('resource_description'); ?></p>
 		</div>
-		<div class="single-resource">
-			<h4 class="resource-name"><a href="http://www.medicinenet.com/script/main/hp.asp" class="resource-link" target="_blank">Resource#2</a></h4>
-			<p class="resource-description">A description of what this resource can be used for and any other pertinent information.</p>
-		</div>
-		<div class="single-resource">
-			<h4 class="resource-name"><a href="http://www.hrsa.gov/index.html" class="resource-link" target="_blank">Resource#3</a></h4>
-			<p class="resource-description">A description of what this resource can be used for and any other pertinent information.</p>
-		</div>
+
+		<?php endwhile; endif; ?>
+		<?php wp_reset_query(); ?>
+
 	</section>  <!-- .main-info-lower   .main-info -->
 
 <?php get_footer(); ?>
