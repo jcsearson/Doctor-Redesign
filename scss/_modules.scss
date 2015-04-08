@@ -17,7 +17,7 @@ main {
 }  /* main */
 
 .title {
-	padding: 15px 0 25px 15px;
+	padding: 25px 0 25px 15px;
 	text-shadow: 1px 1px 2px $black;
 	color: $black;
 	background: $white;
@@ -29,8 +29,7 @@ main {
 }  /* .title */
 
 .landing-image {
-	box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4),
-				   0 10px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 	position: relative;
 	@include bp(venus) {
 		height: 200px;
@@ -47,6 +46,10 @@ main {
 		@include bp(venus) {
 			display: none;
 		}
+		> h3 {
+			font-size: $font-large;
+			display: inline-block;
+		}  /* DO NOT CHANGE / SENSITIVE OUTER ELEMENT */
 		.title-divider {
 			width: 90%;
 			height: 2px;
@@ -58,7 +61,10 @@ main {
 			top: 0;
 			font-size: $font-small;
 			position: relative;
-		}
+		}  /* <p></p> */
+		.head-clock {
+			font-style: italic;
+		}  /* .head-clock */
 	}  /* .ofice-hours */
 	.inner-arrow-down {
 		bottom: -84px;
@@ -109,7 +115,7 @@ nav {
 			color: $white;
 			background: $blue;
 			text-transform: uppercase;
-		}
+		}  /* <a></a> */
 		.svg-anchor {
 			display: none;
 			@include bp(uranus) {
@@ -151,7 +157,7 @@ nav {
 						color: $black;
 						transition: .2s all linear;
 					}
-				}
+				}  /* <a></a> */
 			}  /* .dropdown-item */
 		}  /* .dropdown-menu */
 		&:hover, &:focus {
@@ -166,7 +172,7 @@ nav {
 							@include bp(venus) {
 								font-size: $font-small;
 							}
-						}
+						}  /* <a></a> */
 					}  /* .dropdown-item */
 				}  /* .dropdown-menu */
 			}  /* breakpoint(1000px) */
@@ -185,10 +191,10 @@ nav {
 		h3 {
 			padding: 0 0 10px 0;
 			text-align: center;
-		}
+		}  /* <h3></h3> */
 		p {
 			font-size: $font-small;
-		}
+		}  /* <p></p> */
 		.news-divider {
 			height: 2px;
 			width: 60%;
@@ -209,14 +215,14 @@ nav {
 		@include bp(venus) {
 			font-size: $font-large;
 		}
-	}
+	}  /* <h2></h2> */
 	p {
 		padding: 0 0 25px 0;
 		font-size: $font-med;
 		@include bp(venus) {
 			font-size: $font-small;
 		}
-	}
+	}  /* <p></p> */
 }  /* .main-info */
 
 .main-divider {
@@ -233,7 +239,7 @@ nav {
 		@include bp(venus) {
 			font-size: $font-small;
 		}
-	}
+	}  /* <a></a> */
 }  /* .main-info-upper */
 
 .main-info-lower {
@@ -260,7 +266,7 @@ footer {
 			&:first-child {
 				text-transform: uppercase;
 			}
-		}
+		}  /* <p></p> */
 		.foot-line-break {
 			width: 250px;
 			height: 4px;
@@ -297,13 +303,13 @@ footer {
 		box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.4);
 		background: $white;
 		.site-sub-links {
-			p {
+			> p {
 				font-size: $font-small;
 				a {
 					color: $black;
 					font-size: $font-small;
-				}
-			}
+				}  /* <a></a> */
+			}  /* <p></p> */
 		}  /* .site-sub-links */
 	}  /* .bottom-footer */
 }  /* footer */

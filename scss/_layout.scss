@@ -61,8 +61,14 @@ body {
 .main-info {
 	@include span-columns(8, 12);
 	@include bp(drummer) {
-		@include span-columns(10, 12);
-		margin: 0 1em;
+		@include span-columns(12, 12);
+		//margin: 0 1em;
+	}
+}
+.resource-container {
+	@include span-columns(8, 12);
+	@include bp(drummer) {
+		@include span-columns(12, 12);
 	}
 }
 
@@ -85,15 +91,11 @@ footer {
 	@include span-columns(12, 12);
 	.foot-location-info {
 		float: left;
-		@include bp(venus) {
-			@include span-columns(12, 12);
-		}
 	}
 	.foot-contact-info {
 		float: right;
 		@include bp(venus) {
 			float: left;
-			@include span-columns(12, 12);
 		}
 	}
 }
