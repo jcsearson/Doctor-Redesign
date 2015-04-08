@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: After-hours
+	*/
+	/*This template is for describing after-hours policy.*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="main-info-upper main-info" role="region">
 		<h2>After Hours Services:</h2>
@@ -20,4 +25,4 @@
 		<p>Please note that these after-hours on-call changes took effect on <em>November 1, 2014</em>.</p>
 	</section>  <!-- .main-info-lower   .main-info -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: About
+	*/
+	/*This template is for the page describing the employees.*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="main-info about-page-intro" role="region">
 		<h2>Meet Our Staff!!!</h2>
@@ -92,4 +97,4 @@
 		</div>
 	</section>  <!-- .main-info-lower   .main-info  .staff-entry  -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

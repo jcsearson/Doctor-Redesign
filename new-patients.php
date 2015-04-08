@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: New-patients
+	*/
+	/*This template provides information for potential new patients of the practice.*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="main-info-upper main-info" role="region">
 		<h2 class="cap"><em>New Patients:</em></h2>
@@ -17,4 +22,4 @@
 		<p><em>Congratulations!</em>  The birth of a baby is an exciting but often-anxious time for parents.  It is important to find a health care provider that you feel comfortable with and can trust to provide the very best care for your baby.  We strongly suggest, when possible, that you make an appointment and come meet with Dr. Caplan prior to the arrival of your baby. </p>
 	</section>  <!-- .main-info-lower   .main-info -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

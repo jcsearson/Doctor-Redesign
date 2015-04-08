@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: Contact-send
+	*/
+	/*This template is the submission confirmation page for the contact form.*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="contact-submission-container">
 		<?php
@@ -55,4 +60,4 @@
 		</span>  <!-- .signature -->
 	</section>  <!-- .contact-submission-container -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

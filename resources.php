@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: Resources
+	*/
+	/*This template provides helpful resources for patients of the practice.*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="main-info-upper main-info" role="region">
 		<h2>Helpful Information:</h2>
@@ -25,4 +30,4 @@
 		</div>
 	</section>  <!-- .main-info-lower   .main-info -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

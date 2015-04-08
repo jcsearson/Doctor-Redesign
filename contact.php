@@ -1,7 +1,12 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: Contact
+	*/
+	/*This template contains a contact form.*/
+?>
+
+<?php get_header(); ?>
 
 	<section class="contact-page pre-form-block" role="region">
 		<h2>Want to get in touch with us?</h2>
@@ -11,7 +16,7 @@
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<section class="contact-page form-block">
-		<form id="contact-forms" name="form1" class="main-contact-form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="contact-send.php">
+		<form id="contact-forms" name="form1" class="main-contact-form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="contact-send">
 			<header class="contact-form-head">
 				<h2>Send us a message or request:</h2>
 				<p>Use this form to send a message to any staff member in our office.  Messages will be checked daily.  Please ensure you provide accurate information on how you may be reached.  This site is for <em>non-urgent</em> messages only.  Please call the office if a prompt response is required.  Please be aware that this is <em>not</em> a secure site.  Do not send confidential information.  By providing your contact email address, be aware that you are consenting to it's use.   Please call the office to discuss any concerns you may have <em>before</em> providing such information.</p>
@@ -30,7 +35,7 @@
 							type="text"
 							class="text-input"
 							value=""
-							size="8"
+							size="10"
 							tabindex="1"
 							placeholder="first"
 							/>
@@ -150,4 +155,4 @@
 		</form>
 	</section>  <!-- .contact-form-container -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

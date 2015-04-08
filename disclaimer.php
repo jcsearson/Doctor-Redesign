@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: Index
+	*/
+	/*This template is the site's disclaimer page.*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="main-info-upper main-info" role="region">
 		<h2>Site Disclaimer:</h2>
@@ -16,4 +21,4 @@
 		<p>If you have questions or concerns about your health, please contact your healthcare professional directly.  Secondly, reading the information in the provided links does not imply a recommendation or endorsement.  The information is not a substitute for a qualified health professional's recommendations.  Any patient seeking specific recommendations must consult a qualified healthcare professional for a diagnosis and recommended treatment.</p>
 	</section>  <!-- .main-info-lower   .main-info -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

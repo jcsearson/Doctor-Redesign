@@ -1,9 +1,9 @@
 <?php
 
 	/*
-		Template Name: Index
+		Template Name: Home
 	*/
-	/*This template is defaulted to if Home.php doesnt work.*/
+	/*This is the template displayed on the home (landing) page.*/
 ?>
 
 <?php get_header(); ?>

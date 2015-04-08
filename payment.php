@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: Payment
+	*/
+	/*This template is for describing how to make payments to the practice online (via external link).*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="main-info-upper main-info" role="region">
 		<h2>Pay Bill Online:</h2>
@@ -16,4 +21,4 @@
 		<a class="payment-button" href="https://payments.paysimple.com/Login/CheckOutFormLogin/0oPz5QsDaDXLHxc8TrKpOhEHI1Y-" target="_blank">Pay Online!</a>  <!-- .payment-button -->
 	</section>  <!-- .payment-container  .main-info-lower -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>

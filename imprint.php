@@ -1,9 +1,14 @@
-<?php include("parts/doctype.php"); ?>
+<?php
 
-	<?php include("parts/header.php"); ?>
-	<?php include("parts/nav.php"); ?>
+	/*
+		Template Name: Imprint
+	*/
+	/*This template is for the imprint page to cite attributions.*/
+?>
 
-	<?php include("parts/sidebar.php"); ?>
+<?php get_header(); ?>
+
+	<?php get_sidebar(); ?>
 
 	<section class="main-info-upper main-info" role="region">
 		<h2>Imprint Page:</h2>
@@ -21,4 +26,4 @@
 		<p>Favicon made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC BY 3.0</a></p>
 	</section>  <!-- .main-info-lower   .main-info -->
 
-<?php include("parts/footer.php"); ?>
+<?php get_footer(); ?>
