@@ -7,7 +7,7 @@
 			top: -20px;
 			left: 30px;
 			padding: 5px 10px;
-			border: 5px solid $blue;
+			border: 5px solid $lightblue;
 			background: $white;
 			font-size: $font-large;
 			position: absolute;
@@ -19,6 +19,9 @@
 				transition: 0.2s border linear;
 				cursor: pointer;
 			}
+			.resource-link {
+				color: $lightblue;
+			}
 			&:hover .resource-link, &:focus .resource-link {
 				color: $black;
 				transition: 0.2s color linear;
@@ -27,8 +30,8 @@
 		.resource-description {
 			padding: 30px 10px 10px 10px;
 			color: $white;
-			background: $blue;
-			border: 5px solid $blue;
+			background: $lightblue;
+			border: 5px solid $lightblue;
 			font-size: $font-med;
 			@include bp(venus) {
 				font-size: $font-small;
