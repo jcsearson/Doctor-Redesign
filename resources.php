@@ -17,7 +17,14 @@
 
 	<section class="resource-container" role="region">
 
-		<?php $query = new WP_Query( 'post_type=resources' ); ?>
+		<?php  // specifications for posts
+			$args = array(
+				'post_type'				=> 'resources',
+			   	'posts_per_page'      	=> '-1',
+			   	'status'					=> 'published'
+			);
+		?>
+		<?php $query = new WP_Query($args); ?>
 		<?php if ($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
 
 		<div class="single-resource">
