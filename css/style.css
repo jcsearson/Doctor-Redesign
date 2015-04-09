@@ -696,6 +696,7 @@ footer {
       top: 5px;
       right: 5px;
       border-radius: 50%;
+      background: #7587A6;
       border: 7px solid #7587A6;
       position: absolute;
       /* Query below was Specially designed for use with the Susy grid */
@@ -732,30 +733,6 @@ footer {
         padding: 0; }
 
 /* .staff-entry */
-.steve {
-  background: url("../images/content/staff/steve-thumb.png"); }
-
-.catherine {
-  background: url("../images/content/staff/catherine-thumb.png"); }
-
-.karen {
-  background: #7587A6; }
-
-.wendy {
-  background: #7587A6; }
-
-.devonn {
-  background: #7587A6; }
-
-.kimberly {
-  background: #7587A6; }
-
-.vanessa {
-  background: #7587A6; }
-
-.candice {
-  background: #7587A6; }
-
 .pre-form-block {
   padding: 0 5em 50px 5em;
   /* Query below was Specially designed for use with the Susy grid */
