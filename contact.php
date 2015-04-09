@@ -77,7 +77,7 @@
 					</label>
 					<span class="input-field">
 						<input
-							id="Field3"
+							id="Field3a"
 							name="phone"
 							type="text"
 							class="text-input"
@@ -85,21 +85,35 @@
 							maxlength="4"
 							placeholder="###"
 							size="4"
-							tabindex="4"
+							tabindex="3"
 							/>
 					</span>  <!-- .input-field -->
 					<span><p>-</p></span>
 					<span class="input-field">
 						<input
-							id="Field3"
+							id="Field3b"
 							name="phone"
 							type="text"
 							class="text-input"
 							value=""
-							maxlength="7"
-							placeholder="#######"
-							size="10"
+							maxlength="3"
+							placeholder="###"
+							size="4"
 							tabindex="5"
+							/>
+					</span>  <!-- .input-field -->
+					<span><p>-</p></span>
+					<span class="input-field">
+						<input
+							id="Field3c"
+							name="phone"
+							type="text"
+							class="text-input"
+							value=""
+							maxlength="4"
+							placeholder="####"
+							size="7"
+							tabindex="6"
 							/>
 					</span>  <!-- .input-field -->
 				</li>  <!-- .item3 -->
@@ -114,7 +128,7 @@
 							type="radio"
 							class="checkbox"
 							value="Yes"
-							tabindex="6"
+							tabindex="7"
 							/>
 							<label for="Field4">Yes</label>
 						<input
@@ -123,7 +137,7 @@
 							type="radio"
 							class="checkbox"
 							value="No"
-							tabindex="7"
+							tabindex="8"
 							checked
 							/>
 							<label for="Field4">No</label>
@@ -140,7 +154,7 @@
 							class="text-input"
 							spellcheck="true"
 							cols="50" rows="10"
-							tabindex="8"
+							tabindex="9"
 							onkeyup=""
 							placeholder="Enter Message Here"
 							/></textarea>
