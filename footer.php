@@ -28,7 +28,7 @@
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="<?php $HomeDirectory ?>/js/global-min.js"></script>
+<script src="<?php $homeDirectory ?>/js/global-min.js"></script>
 
 <!-- Typekit Font Request -->
 <script>

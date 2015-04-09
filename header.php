@@ -7,8 +7,8 @@
  */
 
 	/* For simplicity's sake... */
-	global $HomeDirectory;
-	$HomeDirectory = get_template_directory_uri();
+	GLOBAL $homeDirectory;
+	$homeDirectory = get_template_directory_uri();
 
 ?>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
 	<title>Steven E. Caplan, M.D.</title>
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php $HomeDirectory ?>/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php $homeDirectory ?>/favicons/apple-touch-icon-180x180.png">
 
 	<?php wp_head(); ?>  <!-- e.g. jQuery -->
 
@@ -52,8 +52,8 @@
 		$timeOfDay = ' am';
 	}
 
-	global $time;
-	global $timestamp;
+	GLOBAL $time;
+	GLOBAL $timestamp;
 
 	$time = (int)$hour . ' : ' . $minute;
 	$time .= $timeOfDay;
@@ -85,19 +85,19 @@
 				<ul class="navigation-menu">
 					<li class="navigation-item">
 						<a href="/" class="nav-txt-item">Home</a>
-						<a href="/" class="svg-anchor"><?php echo file_get_contents("$HomeDirectory/images/svg/home.svg"); ?></a>
+						<a href="/" class="svg-anchor"><?php echo file_get_contents("$homeDirectory/images/svg/home.svg"); ?></a>
 					</li>
 					<li class="navigation-item">
 						<a href="/about" class="nav-txt-item">About</a>
-						<a href="/about" class="svg-anchor"><?php echo file_get_contents("$HomeDirectory/images/svg/about-us.svg"); ?></a>
+						<a href="/about" class="svg-anchor"><?php echo file_get_contents("$homeDirectory/images/svg/about-us.svg"); ?></a>
 					</li>
 					<li class="navigation-item">
 						<a href="/contact" class="nav-txt-item">Contact</a>
-						<a href="/contact" class="svg-anchor"><?php echo file_get_contents("$HomeDirectory/images/svg/contact.svg"); ?></a>
+						<a href="/contact" class="svg-anchor"><?php echo file_get_contents("$homeDirectory/images/svg/contact.svg"); ?></a>
 					</li>
 					<li class="navigation-item dropdown-ignition">
 						<a href="/payment" class="nav-txt-item">Pay Online</a>
-						<a href="#" class="svg-anchor drop-marker"><?php echo file_get_contents("$HomeDirectory/images/svg/more.svg"); ?></a>
+						<a href="#" class="svg-anchor drop-marker"><?php echo file_get_contents("$homeDirectory/images/svg/more.svg"); ?></a>
 						<ul class="dropdown-menu">
 							<li class="dropdown-item"><a href="/payment">Pay Online</a></li>
 							<li class="dropdown-item"><a href="/new-patients">New Patients</a></li>
