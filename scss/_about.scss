@@ -55,6 +55,7 @@
 			top: 5px;
 			right: 5px;
 			border-radius: 50%;
+			background: $lightblue;
 			border: 7px solid $lightblue;
 			//box-shadow: 0 0 5px 2px $black;
 			position: absolute;
@@ -92,37 +93,3 @@
 		}  /* <p></p> */
 	}  /* .staff-history */
 }  /* .staff-entry */
-
-// breakpoint(neptune)
-//  Inserting face-shot image for each staff member accordingly
-.steve {
-	background: url('../images/content/staff/steve-thumb.png');
-}
-
-.catherine {
-	background: url('../images/content/staff/catherine-thumb.png');
-}
-
-.karen {
-	background: $lightblue;
-}
-
-.wendy {
-	background: $lightblue;
-}
-
-.devonn {
-	background: $lightblue;
-}
-
-.kimberly {
-	background: $lightblue;
-}
-
-.vanessa {
-	background: $lightblue;
-}
-
-.candice {
-	background: $lightblue;
-}
