@@ -50,6 +50,9 @@
 	$time = (int)$hour . ' : ' . $minute;
 	$time .= $timeOfDay;
 	$timestamp = $day . ' ' . $month . ' ' . $dayNumb . ', ' . $year;
+
+	/* For simplicity's sake... */
+	$HomeDirectory = get_template_directory_uri();
 ?>
 
 <body>
@@ -77,19 +80,19 @@
 				<ul class="navigation-menu">
 					<li class="navigation-item">
 						<a href="/" class="nav-txt-item">Home</a>
-						<a href="/" class="svg-anchor"><?php echo file_get_contents("echo get_template_directory_uri();/images/svg/home.svg"); ?></a>
+						<a href="/" class="svg-anchor"><?php echo file_get_contents("$HomeDirectory/images/svg/home.svg"); ?></a>
 					</li>
 					<li class="navigation-item">
 						<a href="/about" class="nav-txt-item">About</a>
-						<a href="/about" class="svg-anchor"><?php echo file_get_contents("echo get_template_directory_uri();/images/svg/about-us.svg"); ?></a>
+						<a href="/about" class="svg-anchor"><?php echo file_get_contents("$HomeDirectory/images/svg/about-us.svg"); ?></a>
 					</li>
 					<li class="navigation-item">
 						<a href="/contact" class="nav-txt-item">Contact</a>
-						<a href="/contact" class="svg-anchor"><?php echo file_get_contents("echo get_template_directory_uri();/images/svg/contact.svg"); ?></a>
+						<a href="/contact" class="svg-anchor"><?php echo file_get_contents("$HomeDirectory/images/svg/contact.svg"); ?></a>
 					</li>
 					<li class="navigation-item dropdown-ignition">
 						<a href="/payment" class="nav-txt-item">Pay Online</a>
-						<a href="#" class="svg-anchor drop-marker"><?php echo file_get_contents("echo get_template_directory_uri();/images/svg/more.svg"); ?></a>
+						<a href="#" class="svg-anchor drop-marker"><?php echo file_get_contents("$HomeDirectory/images/svg/more.svg"); ?></a>
 						<ul class="dropdown-menu">
 							<li class="dropdown-item"><a href="/payment">Pay Online</a></li>
 							<li class="dropdown-item"><a href="/new-patients">New Patients</a></li>
