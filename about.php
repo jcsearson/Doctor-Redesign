@@ -30,7 +30,7 @@
 	<section class="main-info-lower main-info staff-entry" role="region">
 		<div class="staff-head-block">
 			<h2 class="staff-title"><?php the_field('employee_name'); ?> <span class="credentials"><i><?php the_field('employee_certification'); ?></i></span></h2>
-			<div class="thumb-container"><?php the_field('employee_photo'); ?></div>
+			<div class="thumb-container staff"><?php the_field('employee_photo'); ?></div>
 		</div>
 		<div class="staff-history">
 			<p><?php the_field('employee_biography'); ?></p>
