@@ -20,7 +20,7 @@
 	</section>  <!-- .top-footer -->
 	<section class="bottom-footer" role="region">
 		<div class="site-sub-links">
-			<p><em>Steven E. Caplan, MD</em> |  <a href="/disclaimer">Disclaimer</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/payment">Pay Bills</a> | <a href="/after-hours">After-hours</a> | <a href="/referrals">Referrals</a> | <a href="/imprint">Imprint Page</a></p>
+			<p><em>Steven E. Caplan, MD</em> |  <a href="/disclaimer">Disclaimer</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/payment">Pay Bills</a> | <a href="/after-hours">After-hours</a> | <a href="/imprint">Imprint Page</a></p>
 		</div>  <!-- .site-sub-links -->
 	</section>  <!-- .bottom-footer -->
 </footer>
