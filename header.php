@@ -39,6 +39,10 @@
 <?php flush(); ?>
 
 <?php
+	/* Set to correct timezone */
+	date_default_timezone_set('EST5EDT');
+
+	/* Set up time variables */
 	$year = date( 'Y' );
 	$month = date( 'F' );
 	$day = date( 'l' );
