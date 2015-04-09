@@ -7,6 +7,7 @@
  */
 
 	/* For simplicity's sake... */
+	global $HomeDirectory;
 	$HomeDirectory = get_template_directory_uri();
 
 ?>
@@ -50,6 +51,9 @@
 	} else {
 		$timeOfDay = ' am';
 	}
+
+	global $time;
+	global $timestamp;
 
 	$time = (int)$hour . ' : ' . $minute;
 	$time .= $timeOfDay;
