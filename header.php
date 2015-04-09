@@ -5,6 +5,10 @@
  * Displays all of the head element and everything up until the "site-content" div.
  *
  */
+
+	/* For simplicity's sake... */
+	$HomeDirectory = get_template_directory_uri();
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
@@ -18,7 +22,7 @@
 	<title>Steven E. Caplan, M.D.</title>
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri();?>/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php $HomeDirectory ?>/favicons/apple-touch-icon-180x180.png">
 
 	<?php wp_head(); ?>  <!-- e.g. jQuery -->
 
@@ -50,9 +54,6 @@
 	$time = (int)$hour . ' : ' . $minute;
 	$time .= $timeOfDay;
 	$timestamp = $day . ' ' . $month . ' ' . $dayNumb . ', ' . $year;
-
-	/* For simplicity's sake... */
-	$HomeDirectory = get_template_directory_uri();
 ?>
 
 <body>
