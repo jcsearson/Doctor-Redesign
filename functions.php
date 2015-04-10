@@ -138,7 +138,22 @@ function custom_menu_order($menu_ord) {
     	);
 }
 
-//  Remove Unwanted Menu Bar Items
+// Remove the option to add new user or media item from top bar in wp-admin
+function remove_topbar_new_items ( $wp_admin_bar ) {
+    	$wp_admin_bar->remove_node( 'new-user' );
+    	$wp_admin_bar->remove_node( 'new-media' );
+    	$wp_admin_bar->remove_node( 'new-post' );
+    	$wp_admin_bar->remove_node( 'new-page' );
+}
+add_action( 'admin_bar_menu', 'remove_topbar_new_items', 999 );
+
+// Removes the 'Advanced Custom Fields-Sidebar-Item' in WPAdmin
+function remove_acf_menu() {
+	remove_menu_page('edit.php?post_type=acf');
+}
+add_action( 'admin_menu', 'remove_acf_menu', 999);
+
+//  Remove Unwanted Menu Bar Items from WPAdmin
 add_filter('custom_menu_order', 'custom_menu_order');
 add_filter('menu_order', 'custom_menu_order');
 
