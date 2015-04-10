@@ -12,8 +12,8 @@
 
 	<section class="main-info-upper main-info" role="region">
 		<h2>Pay Bill Online:</h2>
-		<p><em>Instructions:</em> Click the "<em>PAY ONLINE</em>" button below.  You can pay with your <i>Mastercard</i>, <i>Visa</i>, <i>Discover Card</i> or from your <i>Checking</i> account.</p>
-		<p><em>Note: </em> <em>Please enter the name as it appears on your bill</em>, to ensure that the appropriate account is credited.  Thank you!</p>
+		<p><em>Instructions:</em> Click the "<em>PAY ONLINE</em>" button below.  This will take you to another page at <i>payments.paysimple.com</i> where you will see a button that says "<em>Click Here to Pay Now</em>".  You should then click on this button and follow the directions on the page.</p>
+		<p><em>Note: </em> <em>Please enter the name as it appears on your bill</em>, to ensure that the appropriate account is credited.  You can pay with your <i>Mastercard</i>, <i>Visa</i>, <i>Discover Card</i> or from your <i>Checking</i> account.Thank you!</p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<section class="payment-container main-info-lower" role="region">
