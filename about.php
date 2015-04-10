@@ -17,7 +17,7 @@
 
 	<?php  // specifications for posts
 		$args = array(
-			'post_type'				=> 'employees',
+			'post_type'				=> 'staff',
 		   	'posts_per_page'      	=> '-1',
 		   	'orderby'				=> 'meta_value',
 		   	'order'					=> 'ASC',
@@ -29,11 +29,11 @@
 
 	<section class="main-info-lower main-info staff-entry" role="region">
 		<div class="staff-head-block">
-			<h2 class="staff-title"><?php the_field('employee_name'); ?> <span class="credentials"><i><?php the_field('employee_certification'); ?></i></span></h2>
+			<h2 class="staff-title"><?php the_field('staff_name'); ?> <span class="credentials"><i><?php the_field('staff_certification'); ?></i></span></h2>
 			<div class="thumb-container staff"><?php echo file_get_contents("$homeDirectory/images/svg/missing-thumb.svg"); ?></div>
 		</div>
 		<div class="staff-history">
-			<p><?php the_field('employee_biography'); ?></p>
+			<p><?php the_field('staff_biography'); ?></p>
 		</div>
 	</section>  <!-- .main-info-lower   .main-info  .staff-entry  -->
 
