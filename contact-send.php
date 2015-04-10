@@ -49,14 +49,13 @@
 			//  office@drstevencaplan.com
 			$to = "j.c.searson@gmail.com";
 			// ***********************************
-			$subject = 'Contact Form Submission';
+			$subject = 'Contact Form Submission -- Dr. Steven E. Caplan';
+			$from = 'From: ' . $full_name;
 
-			mail($to, $subject, $message);
+			mail($to, $subject, $message, $from);
 
 			$thanks = "Thank you for your message $first_name!  We will be sure to get back to you soon.   Please check and make sure that all of the information below is correct.  If you have any other questions, please contact us by phone <i>(410) 601-8383</i> or by email <i>office@drstevencaplan.com</i>.  Have a great day!";
-			$thanks .= "<br><br>";
-			$thanks .= $message . '<hr>';
-			$thanks .= "<br><br><br>";
+			$thanks .= "<br><br>" . $message . '<hr><br><br><br>';
 			echo $thanks;
 		?>
 		<span class="return-address">
@@ -66,9 +65,7 @@
 				?>
 				<div class="address-stamp">
 					<?php
-						echo "2411 West Belvedere<br>";
-						echo "Suite 508<br>";
-						echo "Baltimore, MD 21215";
+						echo "2411 West Belvedere<br>Suite 508<br>Baltimore, MD 21215";
 					?>
 				</div>
 			</span>
