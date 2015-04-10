@@ -4,14 +4,28 @@
  */
 ?>
 <aside class="recent-news" role="region">
+
+	<?php
+		$args = array(
+		   	'posts_per_page'      	=> '-1',
+		   	'orderby'				=> 'meta_value',
+		   	'order'					=> 'ASC',
+		   	'status'					=> 'published'
+		);
+
+		$query = new WP_Query($args);
+		if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+	?>
+
 	<div class="news-item">
-		<h3>After-Hours On-Call changes began <span class="make-urgent">NOVEMBER 1, 2014!</span></h3>
+		<h3><?php the_title(); ?></h3>
 		<div class="news-divider"></div>
-		<p><em>There have been important changes to the after-hours on-call arrangement for this office!  Each time your child has an urgent medical problem you must first phone the office at (410) 601-8383 to listen to a recording telling you the name and phone number of the pediatrician who is on call on that date.  Please go to the after-hours tab for more information.</em></p>
+		<p><em><?php the_content(); ?></em></p>
 	</div>  <!-- .news-item -->
-	<div class="news-item">
-		<h3>Winter is here!</h3>
-		<div class="news-divider"></div>
-		<p><em>In case of inclement weather, please be sure to call the office to confirm that the office will be open, prior to leaving home.</em></p>
-	</div>  <!-- .news-item -->
+
+	<?php
+		endwhile; endif;
+		wp_reset_query();
+	?>
+
 </aside>  <!-- .recent-news -->
