@@ -96,4 +96,63 @@ $args = array(
 add_theme_support('post-thumbnails');
 register_post_type( 'resources', $args );
 }
+
+/* Change the preset Wordpress sidebar label */
+/* 'Posts'  --> 'Announcements' */
+function change_post_menu_label() {
+    	global $menu;
+    	global $submenu;
+    	$menu[5][0] = 'Announcements';
+    	$submenu['edit.php'][5][0] = 'Announcements';
+    	$submenu['edit.php'][10][0] = 'Add Announcement';
+    	$submenu['edit.php'][15][0] = NULL; // Change name for categories
+    	$submenu['edit.php'][16][0] = NULL; // Change name for tags
+    	echo '';
+}
+function change_post_object_label() {
+    	global $wp_post_types;
+    	$labels = &$wp_post_types['post']->labels;
+    	$labels->name = 'Announcements';
+    	$labels->singular_name = 'Announcement';
+    	$labels->add_new = 'Add New Announcement';
+    	$labels->add_new_item = 'Add New Announcement';
+    	$labels->edit_item = 'Edit Announcements';
+    	$labels->new_item = 'New Announcement';
+    	$labels->view_item = 'View Announcement';
+    	$labels->search_items = 'Search Announcements';
+    	$labels->not_found = 'No Announcements found';
+    	$labels->not_found_in_trash = 'No Announcements found in Trash';
+}
+add_action( 'init', 'change_post_object_label' );
+add_action( 'admin_menu', 'change_post_menu_label' );
+
+// CUSTOMIZE ADMIN MENU ORDER
+function custom_menu_order($menu_ord) {
+      if (!$menu_ord) return true;
+      return array(
+      'index.php', // this represents the dashboard link
+      'edit.php', //the posts tab
+      'edit.php?post_type=employees',
+      'edit.php?post_type=resources',
+      'upload.php', // the media manager
+      'edit.php?post_type=page',
+    	);
+}
+
+   //  Remove Unwanted Menu Bar Items
+add_filter('custom_menu_order', 'custom_menu_order');
+add_filter('menu_order', 'custom_menu_order');
+
+function remove_admin_menu_items() {
+	$remove_menu_items = array(__('Media'),__('Plugins'),__('Comments'),__('Dashboard'),__('Users'),__('Tools'),);
+	global $menu;
+	end ($menu);
+	while (prev($menu)){
+		$item = explode(' ',$menu[key($menu)][0]);
+		if(in_array($item[0] != NULL?$item[0]:"" , $remove_menu_items)){
+		unset($menu[key($menu)]);}
+	}
+}
+add_action('admin_menu', 'remove_admin_menu_items');
+?>
 ?>
