@@ -130,21 +130,20 @@ add_action( 'admin_menu', 'change_post_menu_label' );
 function custom_menu_order($menu_ord) {
       if (!$menu_ord) return true;
       return array(
-      'index.php', // this represents the dashboard link
-      'edit.php', //the posts tab
-      'edit.php?post_type=employees',
-      'edit.php?post_type=resources',
-      'upload.php', // the media manager
-      'edit.php?post_type=page',
+      'index.php', // dashboard tab
+      'edit.php', // posts tab
+      'edit.php?post_type=employees',  // employees tab
+      'edit.php?post_type=resources',  // resources tab
+      'upload.php', // media tab
     	);
 }
 
-   //  Remove Unwanted Menu Bar Items
+//  Remove Unwanted Menu Bar Items
 add_filter('custom_menu_order', 'custom_menu_order');
 add_filter('menu_order', 'custom_menu_order');
 
 function remove_admin_menu_items() {
-	$remove_menu_items = array(__('Media'),__('Plugins'),__('Comments'),__('Dashboard'),__('Users'),__('Tools'),);
+	$remove_menu_items = array(__('Media'),__('Plugins'),__('Comments'),__('Dashboard'),__('Users'),__('Tools'),__('Pages'),);
 	global $menu;
 	end ($menu);
 	while (prev($menu)){
@@ -154,5 +153,4 @@ function remove_admin_menu_items() {
 	}
 }
 add_action('admin_menu', 'remove_admin_menu_items');
-?>
 ?>
