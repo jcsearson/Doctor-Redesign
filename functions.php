@@ -1,25 +1,25 @@
 <?php
 /* Employees -- Custom Post Type */
-add_action( 'init', 'register_cpt_employees' );
-function register_cpt_employees() {
+add_action( 'init', 'register_cpt_staff' );
+function register_cpt_staff() {
 $labels = array(
-'name' => _x( 'Employees', 'employees' ),
-'singular_name' => _x( 'Employee', 'employee' ),
-'add_new' => _x( 'Add New Employee', 'add new employee' ),
-'add_new_item' => _x( 'Add New Employee', 'add new employee' ),
-'edit_item' => _x( 'Edit Employees', 'edit employees' ),
-'new_item' => _x( 'New Employee', 'new employee' ),
-'view_item' => _x( 'View Employee', 'view employee' ),
-'search_items' => _x( 'Search Employees', 'search employees' ),
-'not_found' => _x( 'Employee was Not Found', 'employee was not found' ),
+'name' => _x( 'Staff', 'staff' ),
+'singular_name' => _x( 'Staff Member', 'staff member' ),
+'add_new' => _x( 'Add New Staff Member', 'add new staff member' ),
+'add_new_item' => _x( 'Add New Staff Member', 'add new staff member' ),
+'edit_item' => _x( 'Edit Staff', 'edit staff' ),
+'new_item' => _x( 'New Staff Member', 'new staff member' ),
+'view_item' => _x( 'View Staff Member', 'view staff member' ),
+'search_items' => _x( 'Search Staff', 'search staff' ),
+'not_found' => _x( 'There are currently no staff members.', 'there are currently no staff members.' ),
 'not_found_in_trash' => _x( 'Not found in Trash', 'not found in trash' ),
-'parent_item_colon' => _x( 'Parent Employee:', 'parent employee:' ),
-'menu_name' => _x( 'Employees', 'employee' ),
+'parent_item_colon' => _x( 'Staff:', 'staff:' ),
+'menu_name' => _x( 'Staff', 'staff' ),
 );
 $args = array(
 'labels' => $labels,
 'hierarchical' => true,
-'description' => 'Custom post type for Employees.',
+'description' => 'Custom post type for Staff.',
 'supports' => array( 	'title',
 						'editor',
 						'excerpt',
@@ -45,7 +45,7 @@ $args = array(
 'capability_type' => 'post'
 );
 add_theme_support('post-thumbnails');
-register_post_type( 'employees', $args );
+register_post_type( 'staff', $args );
 }
 
 /* Resources -- Custom Post Type */
@@ -143,7 +143,7 @@ add_filter('custom_menu_order', 'custom_menu_order');
 add_filter('menu_order', 'custom_menu_order');
 
 function remove_admin_menu_items() {
-	$remove_menu_items = array(__('Media'),__('Plugins'),__('Comments'),__('Dashboard'),__('Users'),__('Tools'),__('Pages'),);
+	$remove_menu_items = array(__('Media'),__('Plugins'),__('Comments'),__('Dashboard'),__('Users'),__('Tools'),__('Pages'),__('Appearance'),__('Settings'),/*__(''),*/);
 	global $menu;
 	end ($menu);
 	while (prev($menu)){
