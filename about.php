@@ -23,9 +23,9 @@
 		   	'order'					=> 'ASC',
 		   	'status'					=> 'published'
 		);
+		$query = new WP_Query($args);
+		if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
 	?>
-	<?php $query = new WP_Query($args); ?>
-	<?php if ($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
 
 	<section class="main-info-lower main-info staff-entry" role="region">
 		<div class="staff-head-block">
@@ -37,7 +37,9 @@
 		</div>
 	</section>  <!-- .main-info-lower   .main-info  .staff-entry  -->
 
-	<?php endwhile; endif; ?>
-	<?php wp_reset_query(); ?>
+	<?php
+		endwhile; endif;
+		wp_reset_query();
+	?>
 
 <?php get_footer(); ?>
