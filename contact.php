@@ -49,7 +49,7 @@
 							value=""
 							size="10"
 							tabindex="2"
-							placeholder="last"
+							placeholder="middle"
 							/>
 					</span>  <!-- .input-field -->
 					<span class="input-field">
