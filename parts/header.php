@@ -1,4 +1,7 @@
 <?php
+	/* Set to correct timezone */
+	date_default_timezone_set('EST5EDT');
+
 	$year = date( 'Y' );
 	$month = date( 'F' );
 	$day = date( 'l' );
@@ -11,6 +14,9 @@
 	} else {
 		$timeOfDay = ' am';
 	}
+
+	GLOBAL $time;
+	GLOBAL $timestamp;
 
 	$time = (int)$hour . ' : ' . $minute;
 	$time .= $timeOfDay;
