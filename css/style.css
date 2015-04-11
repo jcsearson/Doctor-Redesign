@@ -470,6 +470,8 @@ nav {
     /* .news-divider */ }
     .recent-news .news-item h3 {
       padding: 0 0 10px 0;
+      color: #2176C7;
+      text-shadow: 1px 1px 1px #F8F8F8;
       text-align: center; }
     .recent-news .news-item p {
       font-size: 16px; }

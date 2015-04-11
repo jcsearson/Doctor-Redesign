@@ -1,6 +1,6 @@
 <aside class="recent-news" role="region">
 	<div class="news-item">
-		<h3>After-Hours On-Call changes began <span class="make-urgent">NOVEMBER 1, 2014!</span></h3>
+		<h3>After-Hours On-Call changes began November 1, 2014!</h3>
 		<div class="news-divider"></div>
 		<p><em>There have been important changes to the after-hours on-call arrangement for this office!  Each time your child has an urgent medical problem you must first phone the office at (410) 601-8383 to listen to a recording telling you the name and phone number of the pediatrician who is on call on that date.  Please go to the after-hours tab for more information.</em></p>
 	</div>  <!-- .news-item -->
