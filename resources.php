@@ -12,16 +12,16 @@
 
 	<section class="resource-container" role="region">
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="http://www.webmd.com/" class="resource-link" target="_blank">Resource#1</a></h4>
-			<p class="resource-description">A description of what this resource can be used for and any other pertinent information.</p>
+			<h4 class="resource-name"><a href="/resources-infants.php" class="resource-link">Infants</a></h4>
+			<p class="resource-description">Click on the link above to view a series of resources on infant care.</p>
 		</div>
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="http://www.medicinenet.com/script/main/hp.asp" class="resource-link" target="_blank">Resource#2</a></h4>
-			<p class="resource-description">A description of what this resource can be used for and any other pertinent information.</p>
+			<h4 class="resource-name"><a href="/resources-toddlers.php" class="resource-link">Toddlers</a></h4>
+			<p class="resource-description">Click on the link above to view information on keeping your toddler healthy!</p>
 		</div>
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="http://www.hrsa.gov/index.html" class="resource-link" target="_blank">Resource#3</a></h4>
-			<p class="resource-description">A description of what this resource can be used for and any other pertinent information.</p>
+			<h4 class="resource-name"><a href="/resources-teens.php" class="resource-link">Teens</a></h4>
+			<p class="resource-description">Click the link above to view information on teen health care.</p>
 		</div>
 	</section>  <!-- .main-info-lower   .main-info -->
 
