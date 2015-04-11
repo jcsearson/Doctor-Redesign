@@ -5,8 +5,8 @@ function register_cpt_staff() {
 $labels = array(
 'name' => _x( 'Staff', 'staff' ),
 'singular_name' => _x( 'Staff Member', 'staff member' ),
-'add_new' => _x( 'Add New Staff Member', 'add new staff member' ),
-'add_new_item' => _x( 'Add New Staff Member', 'add new staff member' ),
+'add_new' => _x( 'Add Staff Member', 'add staff member' ),
+'add_new_item' => _x( 'Add Staff Member', 'add staff member' ),
 'edit_item' => _x( 'Edit Staff', 'edit staff' ),
 'new_item' => _x( 'New Staff Member', 'new staff member' ),
 'view_item' => _x( 'View Staff Member', 'view staff member' ),
@@ -54,7 +54,7 @@ function register_cpt_resources() {
 $labels = array(
 'name' => _x( 'Resources', 'resources' ),
 'singular_name' => _x( 'Resource', 'resource' ),
-'add_new' => _x( 'Add New', 'add new' ),
+'add_new' => _x( 'Add New Resource', 'add new resource' ),
 'add_new_item' => _x( 'Add New Resource', 'add new resource' ),
 'edit_item' => _x( 'Edit Resources', 'edit resources' ),
 'new_item' => _x( 'New Resource', 'new resource' ),
