@@ -45,10 +45,10 @@
 .additional-resources {
 	h3 {
 		padding: 0 0 25px 0;
-	}  /* <h4></h4> */
-	.additional-link-container {
+	}  /* <h3></h3> */
+	> p {
 		padding: 5px 0;
-		> a {
+		a {
 			font-size: $font-med;
 			@include bp(venus) {  /* 600px */
 				font-size: $font-small;
