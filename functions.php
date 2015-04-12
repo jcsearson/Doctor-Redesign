@@ -1,5 +1,5 @@
 <?php
-/* Employees -- Custom Post Type */
+/* Staff -- Custom Post Type */
 add_action( 'init', 'register_cpt_staff' );
 function register_cpt_staff() {
 $labels = array(
@@ -48,56 +48,7 @@ add_theme_support('post-thumbnails');
 register_post_type( 'staff', $args );
 }
 
-/* Resources -- Custom Post Type */
-add_action( 'init', 'register_cpt_resources' );
-function register_cpt_resources() {
-$labels = array(
-'name' => _x( 'Resources', 'resources' ),
-'singular_name' => _x( 'Resource', 'resource' ),
-'add_new' => _x( 'Add New Resource', 'add new resource' ),
-'add_new_item' => _x( 'Add New Resource', 'add new resource' ),
-'edit_item' => _x( 'Edit Resources', 'edit resources' ),
-'new_item' => _x( 'New Resource', 'new resource' ),
-'view_item' => _x( 'View Resource', 'view resource' ),
-'search_items' => _x( 'Search Resources', 'search resources' ),
-'not_found' => _x( 'Resource was Not Found', 'resource was not found' ),
-'not_found_in_trash' => _x( 'Not found in Trash', 'not found in trash' ),
-'parent_item_colon' => _x( 'Parent Resource:', 'parent resource:' ),
-'menu_name' => _x( 'Resources', 'resources' ),
-);
-$args = array(
-'labels' => $labels,
-'hierarchical' => true,
-'description' => 'Custom post type for Resources.',
-'supports' => array( 	'title',
-			'editor',
-			'excerpt',
-			'author',
-			'thumbnail',
-			'trackbacks',
-			'custom-fields',
-			'comments',
-			'revisions',
-			'page-attributes',
-			'post-formats'),
-'public' => true,
-'show_ui' => true,
-'show_in_menu' => true,
-'menu_icon' => 'dashicons-book',
-'show_in_nav_menus' => true,
-'publicly_queryable' => true,
-'exclude_from_search' => false,
-'has_archive' => true,
-'query_var' => true,
-'can_export' => true,
-'rewrite' => true,
-'capability_type' => 'post'
-);
-add_theme_support('post-thumbnails');
-register_post_type( 'resources', $args );
-}
-
-/* Template Page -- Articles or Messages (Main Content) -- Custom Post Type */
+/* Template Page -- Articles (Main Content) -- Custom Post Type */
 add_action( 'init', 'register_cpt_articles' );
 function register_cpt_articles() {
 $labels = array(
@@ -149,34 +100,54 @@ add_theme_support('post-thumbnails');
 register_post_type( 'articles', $args );
 }
 
-/* Change the preset Wordpress sidebar label */
-/* 'Posts'  --> 'Announcements' */
-function change_post_menu_label() {
-    	global $menu;
-    	global $submenu;
-    	$menu[5][0] = 'Announcements';
-    	$submenu['edit.php'][5][0] = 'Announcements';
-    	$submenu['edit.php'][10][0] = 'Add Announcement';
-    	$submenu['edit.php'][15][0] = NULL; // Change name for categories
-    	$submenu['edit.php'][16][0] = NULL; // Change name for tags
-    	echo '';
+/* Announcements (Sidebar) -- Custom Post Type */
+add_action( 'init', 'register_cpt_announcements' );
+function register_cpt_announcements() {
+$labels = array(
+'name' => _x( 'Announcements', 'announcements' ),
+'singular_name' => _x( 'Announcement', 'announcement' ),
+'add_new' => _x( 'Add Announcement', 'add new announcement' ),
+'add_new_item' => _x( 'Add New Announcement', 'add new announcement' ),
+'edit_item' => _x( 'Edit Announcement', 'edit announcement' ),
+'new_item' => _x( 'New Announcement', 'new announcement' ),
+'view_item' => _x( 'View Announcement', 'view announcement' ),
+'search_items' => _x( 'Search Announcements', 'search announcements' ),
+'not_found' => _x( 'There are currently no announcements.', 'there are currently no announcements.' ),
+'not_found_in_trash' => _x( 'Not found in Trash', 'not found in trash' ),
+'parent_item_colon' => _x( 'Announcements:', 'announcements:' ),
+'menu_name' => _x( 'Announcements', 'announcements' ),
+);
+$args = array(
+'labels' => $labels,
+'hierarchical' => true,
+'description' => 'Custom post type for Announcements.',
+'supports' => array(      'title',
+                                    'editor',
+                                    'excerpt',
+                                    'author',
+                                    'thumbnail',
+                                    'trackbacks',
+                                    'custom-fields',
+                                    'comments',
+                                    'revisions',
+                                    'page-attributes',
+                                    'post-formats'),
+'public' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'menu_icon' => 'dashicons-megaphone',
+'show_in_nav_menus' => true,
+'publicly_queryable' => true,
+'exclude_from_search' => false,
+'has_archive' => true,
+'query_var' => true,
+'can_export' => true,
+'rewrite' => true,
+'capability_type' => 'post'
+);
+add_theme_support('post-thumbnails');
+register_post_type( 'announcements', $args );
 }
-function change_post_object_label() {
-    	global $wp_post_types;
-    	$labels = &$wp_post_types['post']->labels;
-    	$labels->name = 'Announcements';
-    	$labels->singular_name = 'Announcement';
-    	$labels->add_new = 'Add New Announcement';
-    	$labels->add_new_item = 'Add New Announcement';
-    	$labels->edit_item = 'Edit Announcements';
-    	$labels->new_item = 'New Announcement';
-    	$labels->view_item = 'View Announcement';
-    	$labels->search_items = 'Search Announcements';
-    	$labels->not_found = 'No Announcements found';
-    	$labels->not_found_in_trash = 'No Announcements found in Trash';
-}
-add_action( 'init', 'change_post_object_label' );
-add_action( 'admin_menu', 'change_post_menu_label' );
 
 // CUSTOMIZE ADMIN MENU ORDER
 function custom_menu_order($menu_ord) {
@@ -184,6 +155,7 @@ function custom_menu_order($menu_ord) {
             return array(
             'index.php', // dashboard tab
             'edit.php', // posts tab
+            'edit.php?post_type=announcements',  // announcements tab
             'edit.php?post_type=articles',  // staff tab
             'edit.php?post_type=staff',  // staff tab
             'edit.php?post_type=resources',  // resources tab
@@ -211,7 +183,7 @@ add_filter('custom_menu_order', 'custom_menu_order');
 add_filter('menu_order', 'custom_menu_order');
 
 function remove_admin_menu_items() {
-	$remove_menu_items = array(__('Media'),__('Plugins'),__('Comments'),__('Dashboard'),__('Users'),__('Tools'),__('Pages'),__('Appearance'),__('Settings'),/*__(''),*/);
+	$remove_menu_items = array(__('Posts'),__('Media'),__('Plugins'),__('Comments'),__('Dashboard'),__('Users'),__('Tools'),__('Pages'),__('Appearance'),__('Settings'),/*__(''),*/);
 	global $menu;
 	end ($menu);
 	while (prev($menu)){
