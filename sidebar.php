@@ -20,7 +20,8 @@
 	<div class="news-item">
 		<h3><?php the_title(); ?></h3>
 		<div class="news-divider"></div>
-		<p><em><?php the_content(); ?></em></p>
+		<p><?php the_content(); ?></p>
+		<span class="announcement-time-stamp">( Posted: <?php the_time('F d, Y'); ?> )</span>
 	</div>  <!-- .news-item -->
 
 	<?php

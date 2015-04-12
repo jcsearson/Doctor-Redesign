@@ -111,6 +111,8 @@ p {
   font-family: "proxima-nova",sans-serif; }
   .wf-loading p {
     visibility: hidden; }
+  p span {
+    display: inline !important; }
 
 a {
   text-decoration: none;
