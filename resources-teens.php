@@ -29,7 +29,7 @@
 
 	<section class="main-info-lower main-info additional-resources" role="region">
 		<h3><?php the_field('article_title_bottom'); ?></h3>
-		<p class="additional-link-container"><a href="#" class="additional-link"><?php the_field('bottom_section'); ?></a></p>
+		<p class="additional-link-container"><span class="additional-link"><?php the_field('bottom_section'); ?></span></p>
 	</section>  <!-- .main-info-lower   .main-info -->
 
 	<?php

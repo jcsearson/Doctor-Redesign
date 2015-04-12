@@ -163,6 +163,15 @@ i {
   color: #819090;
   font-size: 16px; }
 
+.small-font-size {
+  font-size: 16px; }
+
+.medium-font-size {
+  font-size: 24px; }
+
+.large-font-size {
+  font-size: 32px; }
+
 /* The following document is only for the most basic layout of this website.  Everything else will be included in the modules.scss file in order to keep things organized. */
 * {
   -moz-box-sizing: border-box;
@@ -697,6 +706,7 @@ footer {
   /* <h2></h2> */
   /* <p></p> */ }
   .about-page-intro > h2 {
+    border-bottom: 2px solid #ABABAB;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase; }
@@ -800,9 +810,10 @@ footer {
 /* .staff-entry */
 .pre-form-block {
   padding: 0 5em 50px 5em;
+  width: 90%;
+  margin: 0 5%;
   /* Query below was Specially designed for use with the Susy grid */
   /* h2 */
-  /* h4 */
   /* p */ }
   @media (max-width: 47em) {
     .pre-form-block {
@@ -810,24 +821,15 @@ footer {
       padding: 0 1em 50px 1em; } }
   .pre-form-block h2 {
     padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid #ABABAB;
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 600px) {
       .pre-form-block h2 {
         /* 600px */
         font-size: 24px; } }
-  .pre-form-block h4 {
-    padding: 0 0 10px 0;
-    margin: 0 0 10px 0;
-    color: #ABABAB;
-    font-size: 20px;
-    border-bottom: 2px solid #ABABAB;
-    /* Query below was Specially designed for use with the Susy grid */ }
-    @media (max-width: 600px) {
-      .pre-form-block h4 {
-        /* 600px */
-        font-size: 16px; } }
   .pre-form-block p {
-    padding: 0 0 25px 0;
+    padding: 0 0 15px 0;
     font-size: 20px;
     /* Query below was Specially designed for use with the Susy grid */ }
     .pre-form-block p:last-child {
@@ -853,14 +855,10 @@ footer {
     width: 90%;
     padding: 25px;
     margin: 0 5%;
-    background: #F3EFD4;
+    background: #c9e5fa;
     border: 5px solid #222222;
-    /* Query below was Specially designed for use with the Susy grid */
     /* .contact-form-head */
     /* .contact-form-body */ }
-    @media (max-width: 47em) {
-      .form-block .main-contact-form {
-        /* 47em */ } }
     .form-block .main-contact-form .contact-form-head {
       /* <header></header> */
       padding: 0 0 25px 0;
@@ -872,25 +870,19 @@ footer {
           /* 600px */
           display: none; } }
       .form-block .main-contact-form .contact-form-head h2 {
-        padding: 0 0 10px 0; }
+        padding: 20px 0 10px 0;
+        border-top: 2px solid #222222; }
       .form-block .main-contact-form .contact-form-head p {
-        padding: 0 0 25px 0;
+        padding: 0 0 10px 0;
         font-size: 20px; }
         .form-block .main-contact-form .contact-form-head p:last-child {
-          padding: 0; }
+          border-bottom: 2px solid #222222; }
     .form-block .main-contact-form .contact-form-body {
       /* <ul></ul> */
-      padding: 25px 0 0 0;
-      border-top: 2px solid #222222;
-      /* Query below was Specially designed for use with the Susy grid */
       /* .item1 */
       /* first/middle/last -- name inputs */
       /* .submission-item */
       /* .button */ }
-      @media (max-width: 600px) {
-        .form-block .main-contact-form .contact-form-body {
-          /* 600px */
-          border-top: none; } }
       .form-block .main-contact-form .contact-form-body .item1 {
         /* .input-field */ }
         .form-block .main-contact-form .contact-form-body .item1 .input-field {
@@ -946,7 +938,13 @@ footer {
             padding: 2px 0 0 0;
             font-size: 20px;
             color: #ABABAB;
-            text-align: center; }
+            text-align: center;
+            /* Query below was Specially designed for use with the Susy grid */ }
+            @media (max-width: 600px) {
+              .form-block .main-contact-form .contact-form-body .submission-item .input-field input::-webkit-input-placeholder {
+                padding: 2px 0 0 5px;
+                font-size: 16px;
+                text-align: left; } }
           .form-block .main-contact-form .contact-form-body .submission-item .input-field input:focus::-webkit-input-placeholder {
             opacity: 0;
             transition: 0.2s opacity linear; }
@@ -982,7 +980,7 @@ footer {
   margin: 0 1.25em;
   line-height: 1.2;
   font-size: 24px;
-  background: #DCDBDD;
+  background: #c9e5fa;
   border: 5px solid #2176C7;
   position: relative;
   /* Query below was Specially designed for use with the Susy grid */
@@ -1073,18 +1071,18 @@ footer {
 
 /* .resource-container */
 .additional-resources {
-  /* <h4></h4> */
+  /* <h3></h3> */
   /* .additional-link-container */ }
   .additional-resources h3 {
     padding: 0 0 25px 0; }
-  .additional-resources .additional-link-container {
+  .additional-resources > p {
     padding: 5px 0;
     /* .additional-link */ }
-    .additional-resources .additional-link-container > a {
+    .additional-resources > p a {
       font-size: 20px;
       /* Query below was Specially designed for use with the Susy grid */ }
       @media (max-width: 600px) {
-        .additional-resources .additional-link-container > a {
+        .additional-resources > p a {
           /* 600px */
           font-size: 16px; } }
 
