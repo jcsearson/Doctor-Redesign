@@ -25,11 +25,11 @@
 			<p class="resource-description">Click the button on the left to view information on <a href="/resources-infants"><em>infant</em></a> care.</p>
 		</div>  <!-- .single-resource -->
 		<div class="single-resource">
-			<a href="/resources-toddlers" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/pregnant.svg"); ?></a>
+			<a href="/resources-toddlers" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/toddler.svg"); ?></a>
 			<p class="resource-description">Click the button on the left to view information on <a href="/resources-toddlers"><em>toddler</em></a> health.</p>
 		</div>  <!-- .single-resource -->
 		<div class="single-resource">
-			<a href="/resources-teens" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/pregnant.svg"); ?></a>
+			<a href="/resources-teens" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/teen.svg"); ?></a>
 			<p class="resource-description">Click the button on the left to view information on <a href="/resources-teens"><em>teen</em></a> health.</p>
 		</div>  <!-- .single-resource -->
 	</section>  <!-- .resource-container -->
