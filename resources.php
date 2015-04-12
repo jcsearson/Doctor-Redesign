@@ -16,29 +16,22 @@
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<section class="resource-container" role="region">
-
-		<?php  // specifications for posts
-			$args = array(
-			'post_type'				=> 'resources',
-		   	'posts_per_page'      	=> '-1',
-		   	'orderby'				=> 'meta_value',
-		   	'order'					=> 'ASC',
-		   	'status'					=> 'published'
-			);
-			$query = new WP_Query($args);
-			if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
-		?>
-
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="<?php the_field('resource_link'); ?>" class="resource-link" target="_blank"><?php the_field('resource_name'); ?></a></h4>
-			<p class="resource-description"><?php the_field('resource_description'); ?></p>
-		</div>
-
-		<?php
-			endwhile; endif;
-			wp_reset_query();
-		?>
-
-	</section>  <!-- .main-info-lower   .main-info -->
+			<a href="/resources-pregnant" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/pregnant.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on having a healthy <a href="/resources-pregnant"><em>pregnancy</em></a>.</p>
+		</div>  <!-- .single-resource -->
+		<div class="single-resource">
+			<a href="/resources-infants" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/infant.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources-infants"><em>infant</em></a> care.</p>
+		</div>  <!-- .single-resource -->
+		<div class="single-resource">
+			<a href="/resources-toddlers" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/pregnant.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources-toddlers"><em>toddler</em></a> health.</p>
+		</div>  <!-- .single-resource -->
+		<div class="single-resource">
+			<a href="/resources-teens" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/pregnant.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources-teens"><em>teen</em></a> health.</p>
+		</div>  <!-- .single-resource -->
+	</section>  <!-- .resource-container -->
 
 <?php get_footer(); ?>
