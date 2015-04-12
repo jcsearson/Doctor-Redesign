@@ -1,27 +1,20 @@
 .pre-form-block {
 	padding: 0 5em 50px 5em;
+	width: 90%;
+	margin: 0 5%;
 	@include bp(drummer) {  /* 47em */
 		padding: 0 1em 50px 1em;
 	}
 	h2 {
 		padding: 0 0 10px 0;
+		margin: 0 0 10px 0;
 		border-bottom: 2px solid $gray;
 		@include bp(venus) {  /* 600px */
 			font-size: $font-large;
 		}
 	}  /* h2 */
-	h4 {
-		padding: 0 0 10px 0;
-		margin: 0 0 10px 0;
-		color: $gray;
-		font-size: $font-med;
-		border-bottom: 2px solid $gray;
-		@include bp(venus) {  /* 600px */
-			font-size: $font-small;
-		}
-	}  /* h4 */
 	p {
-		padding: 0 0 25px 0;
+		padding: 0 0 15px 0;
 		font-size: $font-med;
 		&:last-child {
 			padding: 0 0 10px 0;
@@ -42,11 +35,8 @@
 		width: 90%;
 		padding: 25px;
 		margin: 0 5%;
-		background: $yellow;
+		background: lighten($twitterblue, 25);
 		border: 5px solid $black;
-		@include bp(drummer) {  /* 47em */
-			//width: 75%;
-		}
 		.contact-form-head {  /* <header></header> */
 			padding: 0 0 25px 0;
 			@include bp(venus) {  /* 600px */
@@ -110,6 +100,11 @@
 						font-size: $font-med;
 						color: $gray;
 						text-align: center;
+						@include bp(venus) {
+							padding: 2px 0 0 5px;
+							font-size: $font-small;
+							text-align: left;
+						}
 					}  /* placeholder text */
 					input:focus::-webkit-input-placeholder {
 						opacity: 0;
@@ -151,7 +146,7 @@
 	margin: 0 1.25em;
 	line-height: 1.2;
 	font-size: $font-large;
-	background: $mediumgray;
+	background: lighten($twitterblue, 25);
 	border: 5px solid $blue;
 	position: relative;
 	@include bp(venus) {  /* 600px */

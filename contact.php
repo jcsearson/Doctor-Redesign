@@ -5,7 +5,6 @@
 
 	<section class="contact-page pre-form-block" role="region">
 		<h2>Want to get in touch with us?</h2>
-		<h4>Please read the following before filling out a form.</h4>
 		<p>E-mail is for <em>non-urgent</em> messages only and will be checked on a daily basis during routine office hours.  Please call the office for more immediate assistance.</p>
 		<p>For children experiencing illness during routine office hours, please call the office at <em>410-601-8383</em> so that an appointment may be scheduled, if necessary.  Every effort is made to ensure that your child is seen within <em>24 hours</em>.  Any messages left with office staff will receive a prompt response.</p>
 	</section>  <!-- .main-info-upper   .main-info -->
