@@ -1,4 +1,53 @@
 <?php
+/* Hours of Operation (Banner on top of Head Image) -- Custom Post Type */
+add_action( 'init', 'register_cpt_hours' );
+function register_cpt_hours() {
+$labels = array(
+'name' => _x( 'Hours', 'hours' ),
+'singular_name' => _x( 'Hours', 'hours' ),
+'add_new' => _x( 'Add New Hours', 'add new hours' ),
+'add_new_item' => _x( 'Add New Hours', 'add new hours' ),
+'edit_item' => _x( 'Edit Hours', 'edit hours' ),
+'new_item' => _x( 'New Hours', 'new hours' ),
+'view_item' => _x( 'View Hours', 'view hours' ),
+'search_items' => _x( 'Search Hours', 'search hours' ),
+'not_found' => _x( 'There are currently no hours of operation set.', 'there are currently no hours of operation set.' ),
+'not_found_in_trash' => _x( 'Not found in Trash', 'not found in trash' ),
+'parent_item_colon' => _x( 'Hours:', 'hours:' ),
+'menu_name' => _x( 'Hours of Operation', 'hours of operation' ),
+);
+$args = array(
+'labels' => $labels,
+'hierarchical' => true,
+'description' => 'Custom post type for Hours.',
+'supports' => array(      'title',
+                                    'editor',
+                                    'excerpt',
+                                    'author',
+                                    'thumbnail',
+                                    'trackbacks',
+                                    'custom-fields',
+                                    'comments',
+                                    'revisions',
+                                    'page-attributes',
+                                    'post-formats'),
+'public' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'menu_icon' => 'dashicons-clock',
+'show_in_nav_menus' => true,
+'publicly_queryable' => true,
+'exclude_from_search' => false,
+'has_archive' => true,
+'query_var' => true,
+'can_export' => true,
+'rewrite' => true,
+'capability_type' => 'post'
+);
+add_theme_support('post-thumbnails');
+register_post_type( 'hours', $args );
+}
+
 /* Staff -- Custom Post Type */
 add_action( 'init', 'register_cpt_staff' );
 function register_cpt_staff() {
@@ -48,27 +97,27 @@ add_theme_support('post-thumbnails');
 register_post_type( 'staff', $args );
 }
 
-/* Template Page -- Articles (Main Content) -- Custom Post Type */
+/* Template Page -- Articles (Page Contents) -- Custom Post Type */
 add_action( 'init', 'register_cpt_articles' );
 function register_cpt_articles() {
 $labels = array(
-'name' => _x( 'Articles', 'articles' ),
+'name' => _x( 'Select a Page to Edit its Contents', 'select a page to edit its contents' ),
 'singular_name' => _x( 'Article', 'article' ),
-'add_new' => _x( 'Add New', 'add new' ),
+'add_new' => _x( '', '' ),
 'add_new_item' => _x( 'Add New Article', 'add new article' ),
-'edit_item' => _x( 'Edit Article', 'edit article' ),
-'new_item' => _x( 'New Article', 'new article' ),
+'edit_item' => _x( 'Edit Page Contents', 'edit page contents' ),
+'new_item' => _x( '', '' ),
 'view_item' => _x( 'View Article', 'view article' ),
 'search_items' => _x( 'Search Articles', 'search articles' ),
 'not_found' => _x( 'There are currently no articles.', 'there are currently no articles.' ),
 'not_found_in_trash' => _x( 'Not found in Trash', 'not found in trash' ),
 'parent_item_colon' => _x( 'Articles:', 'articles:' ),
-'menu_name' => _x( 'Articles', 'articles' ),
+'menu_name' => _x( 'Page Content', 'page content' ),
 );
 $args = array(
 'labels' => $labels,
 'hierarchical' => true,
-'description' => 'Custom post type for Articles.',
+'description' => 'Custom post type for Page Contents.',
 'supports' => array(      'title',
                                     'editor',
                                     'excerpt',
@@ -77,12 +126,8 @@ $args = array(
                                     'trackbacks',
                                     'custom-fields',
                                     'comments',
-                                    'revisions',
                                     'page-attributes',
                                     'post-formats'),
-'taxonomies' => array( 'category',
-                                    'post_tag',
-                                    'page-category' ),
 'public' => true,
 'show_ui' => true,
 'show_in_menu' => true,
@@ -93,7 +138,7 @@ $args = array(
 'has_archive' => true,
 'query_var' => true,
 'can_export' => true,
-'rewrite' => true,
+'rewrite' => false,
 'capability_type' => 'post'
 );
 add_theme_support('post-thumbnails');
@@ -153,13 +198,11 @@ register_post_type( 'announcements', $args );
 function custom_menu_order($menu_ord) {
             if (!$menu_ord) return true;
             return array(
-            'index.php', // dashboard tab
-            'edit.php', // posts tab
+            'edit.php?post_type=hours', // announcements tab
             'edit.php?post_type=announcements',  // announcements tab
             'edit.php?post_type=articles',  // staff tab
             'edit.php?post_type=staff',  // staff tab
             'edit.php?post_type=resources',  // resources tab
-            'upload.php', // media tab
     	);
 }
 
@@ -168,6 +211,7 @@ function remove_topbar_new_items ( $wp_admin_bar ) {
     	$wp_admin_bar->remove_node( 'new-user' );
     	$wp_admin_bar->remove_node( 'new-media' );
     	$wp_admin_bar->remove_node( 'new-post' );
+            $wp_admin_bar->remove_node( 'new-articles' );
     	$wp_admin_bar->remove_node( 'new-page' );
 }
 add_action( 'admin_bar_menu', 'remove_topbar_new_items', 999 );
