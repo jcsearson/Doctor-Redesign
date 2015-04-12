@@ -12,16 +12,20 @@
 
 	<section class="resource-container" role="region">
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="/resources-infants.php" class="resource-link">Infants</a></h4>
-			<p class="resource-description">Click on the link above to view a series of resources on infant care.</p>
+			<a href="/resources-pregnant.php" class="resource-link"><?php echo file_get_contents("images/svg/pregnant.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on having a healthy <a href="/resources-pregnant.php"><em>pregnancy</em></a>.</p>
 		</div>
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="/resources-toddlers.php" class="resource-link">Toddlers</a></h4>
-			<p class="resource-description">Click on the link above to view information on keeping your toddler healthy!</p>
+			<h4 class="resource-name"><a href="/resources-infants.php" class="resource-link"><?php echo file_get_contents("images/svg/infant.svg"); ?></a></h4>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources-infants.php"><em>infant</em></a> care.</p>
 		</div>
 		<div class="single-resource">
-			<h4 class="resource-name"><a href="/resources-teens.php" class="resource-link">Teens</a></h4>
-			<p class="resource-description">Click the link above to view information on teen health care.</p>
+			<h4 class="resource-name"><a href="/resources-toddlers.php" class="resource-link"><?php echo file_get_contents("images/svg/toddler.svg"); ?></a></h4>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources-toddlers.php"><em>toddler</em></a> health.</p>
+		</div>
+		<div class="single-resource">
+			<h4 class="resource-name"><a href="/resources-teens.php" class="resource-link"><?php echo file_get_contents("images/svg/teen.svg"); ?></a></h4>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources-teens.php"><em>teen</em></a> health.</p>
 		</div>
 	</section>  <!-- .main-info-lower   .main-info -->
 
