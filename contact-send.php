@@ -54,7 +54,7 @@
 
 			mail($to, $subject, $message, $from);
 
-			$thanks = "Thank you for your message $first_name!  We will be sure to get back to you soon.   Please check and make sure that all of the information below is correct.  If you have any other questions, please contact us by phone <i>(410) 601-8383</i> or by email <i>office@drstevencaplan.com</i>.  Have a great day!";
+			$thanks = "Thank you for your message $first_name, we will be sure to get back to you soon!   Please check and make sure that all of the information below is correct.  If you have any other questions, our front office can be reached by phone <i>(410) 601-8383</i> or by email <i>office@drstevencaplan.com</i>.  Have a great day!";
 			$thanks .= "<br><br>" . $message . '<hr><br><br><br>';
 			echo $thanks;
 		?>
