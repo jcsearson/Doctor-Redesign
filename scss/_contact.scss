@@ -5,6 +5,7 @@
 	}
 	h2 {
 		padding: 0 0 10px 0;
+		border-bottom: 2px solid $gray;
 		@include bp(venus) {  /* 600px */
 			font-size: $font-large;
 		}
@@ -52,22 +53,18 @@
 				display: none;
 			}
 			h2 {
-				padding: 0 0 10px 0;
+				padding: 20px 0 10px 0;
+				border-top: 2px solid $black;
 			}  /* h2 */
 			p {
-				padding: 0 0 25px 0;
+				padding: 0 0 10px 0;
 				font-size: $font-med;
 				&:last-child {
-					padding: 0;
+					border-bottom: 2px solid $black;
 				}
 			}  /* p */
 		}  /* .contact-form-head */
 		.contact-form-body {  /* <ul></ul> */
-			padding: 25px 0 0 0;
-			border-top: 2px solid $black;
-			@include bp(venus) {  /* 600px */
-				border-top: none;
-			}
 			.item1 {
 				.input-field {
 					@include bp(venus) {  /* 600px */

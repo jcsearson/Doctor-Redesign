@@ -694,6 +694,7 @@ footer {
   /* <h2></h2> */
   /* <p></p> */ }
   .about-page-intro > h2 {
+    border-bottom: 2px solid #ABABAB;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase; }
@@ -807,6 +808,7 @@ footer {
       padding: 0 1em 50px 1em; } }
   .pre-form-block h2 {
     padding: 0 0 10px 0;
+    border-bottom: 2px solid #ABABAB;
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 600px) {
       .pre-form-block h2 {
@@ -869,25 +871,19 @@ footer {
           /* 600px */
           display: none; } }
       .form-block .main-contact-form .contact-form-head h2 {
-        padding: 0 0 10px 0; }
+        padding: 20px 0 10px 0;
+        border-top: 2px solid #222222; }
       .form-block .main-contact-form .contact-form-head p {
-        padding: 0 0 25px 0;
+        padding: 0 0 10px 0;
         font-size: 20px; }
         .form-block .main-contact-form .contact-form-head p:last-child {
-          padding: 0; }
+          border-bottom: 2px solid #222222; }
     .form-block .main-contact-form .contact-form-body {
       /* <ul></ul> */
-      padding: 25px 0 0 0;
-      border-top: 2px solid #222222;
-      /* Query below was Specially designed for use with the Susy grid */
       /* .item1 */
       /* first/middle/last -- name inputs */
       /* .submission-item */
       /* .button */ }
-      @media (max-width: 600px) {
-        .form-block .main-contact-form .contact-form-body {
-          /* 600px */
-          border-top: none; } }
       .form-block .main-contact-form .contact-form-body .item1 {
         /* .input-field */ }
         .form-block .main-contact-form .contact-form-body .item1 .input-field {
