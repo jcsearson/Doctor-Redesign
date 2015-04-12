@@ -13,7 +13,7 @@
 		border: 5px solid $blue;
 		text-transform: none;
 		text-align: center;
-		@include bp(earth) {
+		@include bp(earth) {  /* 750px */
 			margin: 0 1em;
 		}
 		&:hover, &:focus {
@@ -32,7 +32,7 @@
 		z-index: -99;
 		border-bottom: 5px solid $blue;
 		position: absolute;
-		@include bp(earth) {
+		@include bp(earth) {  /* 750px */
 			width: 100%;
 		}
 	}  /* .button-strike */

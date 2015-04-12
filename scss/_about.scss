@@ -15,10 +15,10 @@
 .staff-entry {
 	margin: 0 0 75px 0;
 	position: relative;
-	@include bp(drummer) {
+	@include bp(drummer) {  /* 47em */
 		width: 100%;
 	}
-	@include bp(venus) {
+	@include bp(venus) {  /* 600px */
 		margin: 0 0 25px 0;
 	}
 	.staff-head-block {
@@ -36,14 +36,14 @@
 			text-transform: uppercase;
 			float: left;
 			display: inline-block;
-			@include bp(venus) {
+			@include bp(venus) {  /* 600px */
 				margin: 50px 0 15px 25px;
 				font-size: $font-small!important;
 			}
 			.credentials {
 				color: $gray;
 				font-size: $font-med;
-				@include bp(venus) {
+				@include bp(venus) {  /* 600px */
 					font-size: $font-small;
 				}
 			}  /* .credentials */
@@ -58,14 +58,14 @@
 			background: $lightblue;
 			border: 7px solid $lightblue;
 			position: absolute;
-			@include bp(venus) {
+			@include bp(venus) {  /* 600px */
 				display: none;
 			}
 			.missing-thumb {
 				top: 17px;
 				left: 15px;
 				width: 75px;
-				fill: $black;
+				fill: $green!important;
 				position: absolute;
 			}  /* .missing-thumb */
 		}  /* .thumb-container */
@@ -76,14 +76,14 @@
 		background: $lightblue;
 		border: 4px solid $lightblue;
 		float: left;
-		@include bp(venus) {
+		@include bp(venus) {  /* 600px */
 			padding: 25px 10px 10px 10px;
 		}
 		> p {
 			padding: 0 0 25px 0;
 			color: $white;
 			font-size: $font-med;
-			@include bp(venus) {
+			@include bp(venus) {  /* 600px */
 				font-size: $font-small;
 			}
 			&:last-child {

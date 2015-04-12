@@ -21,7 +21,7 @@ main {
 	text-shadow: 1px 1px 2px $black;
 	color: $black;
 	background: $white;
-	@include bp(venus) {
+	@include bp(venus) {  /* 600px */
 		padding: 15px 0 25px 0;
 		font-size: $font-xl;
 		text-align: center;
@@ -31,7 +31,7 @@ main {
 .landing-image {
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 	position: relative;
-	@include bp(venus) {
+	@include bp(venus) {  /* 600px */
 		height: 200px;
 	}
 	.office-hours {
@@ -43,7 +43,7 @@ main {
 		background: lighten($gray, 25) url('../images/svg/logo.svg') center no-repeat;
 		position: absolute;
 		display: inline;
-		@include bp(venus) {
+		@include bp(venus) {  /* 600px */
 			display: none;
 		}
 		> h3 {
@@ -100,13 +100,18 @@ nav {
 	background: $blue;
 	float: left;
 	text-align: center;
+	.anchor-item {
+		@include bp(uranus) {  /* 1000px */
+			display: none;
+			float: left;
+		}  /* removes item in mobile view because too much clutter! */
+	}  /* .anchor-item */
 	.navigation-item {
 		padding: 0;
 		width: ((100%) / 7) - 1.5;
 		display: inline-block;
-		@include bp(uranus) {
-			width: 25%;
-			float: left;
+		@include bp(uranus) {  /* 1000px */
+			width: ((100%) / 6) - 1.2;
 		}
 		a {
 			padding: 30px 0 30px 0;
@@ -118,20 +123,20 @@ nav {
 		}  /* <a></a> */
 		.svg-anchor {
 			display: none;
-			@include bp(uranus) {
+			@include bp(uranus) {  /* 1000px */
 				width: 100%;
 				display: inline-block;
 			}
 			.svg-icon {
 				width: 50px;
 				fill: $white;
-				@include bp(venus) {
+				@include bp(venus) {  /* 600px */
 					width: 25px;
 				}
 			}  /* .svg-icon */
 		}  /* .svg-anchor */
 		.nav-txt-item {
-			@include bp(uranus) {
+			@include bp(uranus) {  /* 1000px */
 				display: none;
 			}
 		}  /* .nav-txt-item */
@@ -161,7 +166,7 @@ nav {
 			}  /* .dropdown-item */
 		}  /* .dropdown-menu */
 		&:hover, &:focus {
-			@include bp(uranus) {
+			@include bp(uranus) {  /* 1000px */
 				.dropdown-menu {
 					display: block;
 					transition: .2s display linear;
@@ -169,7 +174,7 @@ nav {
 						width: 100%;
 						a {
 							width: 100%;
-							@include bp(venus) {
+							@include bp(venus) {  /* 600px */
 								font-size: $font-small;
 							}
 						}  /* <a></a> */
@@ -190,36 +195,46 @@ nav {
 		background: lighten($lightblue, 30);
 		h3 {
 			padding: 0 0 10px 0;
+			color: $blue;
+			text-shadow: 1px 1px 1px $gray;
 			text-align: center;
+			text-transform: uppercase;
 		}  /* <h3></h3> */
-		p {
-			font-size: $font-small;
-		}  /* <p></p> */
 		.news-divider {
 			height: 2px;
 			width: 60%;
 			margin: 0 20% 15px 20%;
 			border-bottom: 1px solid $black;
 		}  /* .news-divider */
+		p {
+			line-height: 1.1;
+			font-size: $font-med;
+		}  /* <p></p> */
+		.announcement-time-stamp {
+			width: 100%;
+			padding: 15px 10px 0 0;
+			color: darken($gray, 15);
+			text-align: right;
+		}  /* .announcement-time-stamp */
 	}  /* .news-item */
 }  /* .recent-news */
 
 .main-info {
-	padding: 0 2em 50px 2em;
+	padding: 0 2em 0 2em;
 	&:last-child {
 		border-bottom: none;
 	}
 	h2 {
 		margin: 0 0 10px 0;
 		font-size: $font-xxl;
-		@include bp(venus) {
+		@include bp(venus) {  /* 600px */
 			font-size: $font-large;
 		}
 	}  /* <h2></h2> */
 	p {
 		padding: 0 0 25px 0;
 		font-size: $font-med;
-		@include bp(venus) {
+		@include bp(venus) {  /* 600px */
 			font-size: $font-small;
 		}
 	}  /* <p></p> */
@@ -236,7 +251,7 @@ nav {
 .main-info-upper {
 	a {
 		font-size: $font-med;
-		@include bp(venus) {
+		@include bp(venus) {  /* 600px */
 			font-size: $font-small;
 		}
 	}  /* <a></a> */
@@ -277,10 +292,10 @@ footer {
 		.foot-location-info {
 			margin: 0 0 0 100px;
 			color: $white;
-			@include bp(mars) {
+			@include bp(mars) {  /* 850px */
 				margin: 0 0 0 25px;
 			}
-			@include bp(moon) {
+			@include bp(moon) {  /* 700px */
 				margin: 0 auto 25px auto;
 				display: block;
 			}
@@ -288,10 +303,10 @@ footer {
 		.foot-contact-info {
 			margin: 0 100px 0 0;
 			color: $white;
-			@include bp(mars) {
+			@include bp(mars) {  /* 850px */
 				margin: 0 25px 0 0;
 			}
-			@include bp(moon) {
+			@include bp(moon) {  /* 700px */
 				margin: 0 auto 25px auto;
 				display: block;
 			}

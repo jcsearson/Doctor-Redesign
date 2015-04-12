@@ -191,6 +191,7 @@ body {
   /* Query below was Specially designed for use with the Susy grid */ }
   @media (max-width: 47em) {
     .recent-news {
+      /* 47em */
       display: none; } }
 
 .main-info {
@@ -201,6 +202,7 @@ body {
   /* Query below was Specially designed for use with the Susy grid */ }
   @media (max-width: 47em) {
     .main-info {
+      /* 47em */
       width: 100%;
       float: left;
       margin-right: 0.93458%;
@@ -214,6 +216,7 @@ body {
   /* Query below was Specially designed for use with the Susy grid */ }
   @media (max-width: 47em) {
     .resource-container {
+      /* 47em */
       width: 100%;
       float: left;
       margin-right: 0.93458%;
@@ -234,6 +237,7 @@ body {
   /* Query below was Specially designed for use with the Susy grid */ }
   @media (max-width: 47em) {
     .contact-submission-container {
+      /* 47em */
       width: 83.17757%;
       float: left;
       margin-right: 0.93458%;
@@ -257,6 +261,7 @@ footer {
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 600px) {
       .top-footer .foot-contact-info {
+        /* 600px */
         float: left; } }
 
 .bottom-footer {
@@ -293,6 +298,7 @@ main {
   /* Query below was Specially designed for use with the Susy grid */ }
   @media (max-width: 600px) {
     .title {
+      /* 600px */
       padding: 15px 0 25px 0;
       font-size: 28px;
       text-align: center; } }
@@ -307,6 +313,7 @@ main {
   /* .outer-arrow-down */ }
   @media (max-width: 600px) {
     .landing-image {
+      /* 600px */
       height: 200px; } }
   .landing-image .office-hours {
     top: -1px;
@@ -324,6 +331,7 @@ main {
     /* .head-clock */ }
     @media (max-width: 600px) {
       .landing-image .office-hours {
+        /* 600px */
         display: none; } }
     .landing-image .office-hours > h3 {
       font-size: 24px;
@@ -372,8 +380,17 @@ nav {
   background: #2176C7;
   float: left;
   text-align: center;
+  /* .anchor-item */
   /* .navigation-item */
   /* .dropdown-ignition */ }
+  .navigation-menu .anchor-item {
+    /* Query below was Specially designed for use with the Susy grid */
+    /* removes item in mobile view because too much clutter! */ }
+    @media (max-width: 1000px) {
+      .navigation-menu .anchor-item {
+        /* 1000px */
+        display: none;
+        float: left; } }
   .navigation-menu .navigation-item {
     padding: 0;
     width: 12.78571%;
@@ -384,8 +401,8 @@ nav {
     /* .nav-txt-item */ }
     @media (max-width: 1000px) {
       .navigation-menu .navigation-item {
-        width: 25%;
-        float: left; } }
+        /* 1000px */
+        width: 15.46667%; } }
     .navigation-menu .navigation-item a {
       padding: 30px 0 30px 0;
       width: 100%;
@@ -399,6 +416,7 @@ nav {
       /* .svg-icon */ }
       @media (max-width: 1000px) {
         .navigation-menu .navigation-item .svg-anchor {
+          /* 1000px */
           width: 100%;
           display: inline-block; } }
       .navigation-menu .navigation-item .svg-anchor .svg-icon {
@@ -407,11 +425,13 @@ nav {
         /* Query below was Specially designed for use with the Susy grid */ }
         @media (max-width: 600px) {
           .navigation-menu .navigation-item .svg-anchor .svg-icon {
+            /* 600px */
             width: 25px; } }
     .navigation-menu .navigation-item .nav-txt-item {
       /* Query below was Specially designed for use with the Susy grid */ }
       @media (max-width: 1000px) {
         .navigation-menu .navigation-item .nav-txt-item {
+          /* 1000px */
           display: none; } }
     .navigation-menu .navigation-item:hover a, .navigation-menu .navigation-item:focus a {
       color: #222222;
@@ -440,6 +460,7 @@ nav {
       /* breakpoint(1000px) */ }
       @media (max-width: 1000px) {
         .navigation-menu .dropdown-ignition:hover, .navigation-menu .dropdown-ignition:focus {
+          /* 1000px */
           /* .dropdown-menu */ }
           .navigation-menu .dropdown-ignition:hover .dropdown-menu, .navigation-menu .dropdown-ignition:focus .dropdown-menu {
             display: block;
@@ -453,6 +474,7 @@ nav {
                 /* Query below was Specially designed for use with the Susy grid */ } }
         @media (max-width: 1000px) and (max-width: 600px) {
           .navigation-menu .dropdown-ignition:hover .dropdown-menu .dropdown-item a, .navigation-menu .dropdown-ignition:focus .dropdown-menu .dropdown-item a {
+            /* 600px */
             font-size: 16px; } }
 
 /* .navigation-menu */
@@ -466,24 +488,32 @@ nav {
     border: 10px solid #2176C7;
     background: #d2d8e2;
     /* <h3></h3> */
+    /* .news-divider */
     /* <p></p> */
-    /* .news-divider */ }
+    /* .announcement-time-stamp */ }
     .recent-news .news-item h3 {
       padding: 0 0 10px 0;
       color: #2176C7;
-      text-shadow: 1px 1px 1px #F8F8F8;
-      text-align: center; }
-    .recent-news .news-item p {
-      font-size: 16px; }
+      text-shadow: 1px 1px 1px #ABABAB;
+      text-align: center;
+      text-transform: uppercase; }
     .recent-news .news-item .news-divider {
       height: 2px;
       width: 60%;
       margin: 0 20% 15px 20%;
       border-bottom: 1px solid #222222; }
+    .recent-news .news-item p {
+      line-height: 1.1;
+      font-size: 20px; }
+    .recent-news .news-item .announcement-time-stamp {
+      width: 100%;
+      padding: 15px 10px 0 0;
+      color: #858585;
+      text-align: right; }
 
 /* .recent-news */
 .main-info {
-  padding: 0 2em 50px 2em;
+  padding: 0 2em 0 2em;
   /* <h2></h2> */
   /* <p></p> */ }
   .main-info:last-child {
@@ -494,6 +524,7 @@ nav {
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 600px) {
       .main-info h2 {
+        /* 600px */
         font-size: 24px; } }
   .main-info p {
     padding: 0 0 25px 0;
@@ -501,6 +532,7 @@ nav {
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 600px) {
       .main-info p {
+        /* 600px */
         font-size: 16px; } }
 
 /* .main-info */
@@ -519,6 +551,7 @@ nav {
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 600px) {
       .main-info-upper a {
+        /* 600px */
         font-size: 16px; } }
 
 /* .main-info-upper */
@@ -561,9 +594,11 @@ footer {
       /* Query below was Specially designed for use with the Susy grid */ }
       @media (max-width: 850px) {
         footer .top-footer .foot-location-info {
+          /* 850px */
           margin: 0 0 0 25px; } }
       @media (max-width: 700px) {
         footer .top-footer .foot-location-info {
+          /* 700px */
           margin: 0 auto 25px auto;
           display: block; } }
     footer .top-footer .foot-contact-info {
@@ -573,9 +608,11 @@ footer {
       /* Query below was Specially designed for use with the Susy grid */ }
       @media (max-width: 850px) {
         footer .top-footer .foot-contact-info {
+          /* 850px */
           margin: 0 25px 0 0; } }
       @media (max-width: 700px) {
         footer .top-footer .foot-contact-info {
+          /* 700px */
           margin: 0 auto 25px auto;
           display: block; } }
   footer .bottom-footer {
@@ -614,6 +651,7 @@ footer {
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 750px) {
       .payment-container .payment-button {
+        /* 750px */
         margin: 0 1em; } }
     .payment-container .payment-button:hover, .payment-container .payment-button:focus {
       background: #2176C7;
@@ -632,6 +670,7 @@ footer {
     /* Query below was Specially designed for use with the Susy grid */ }
     @media (max-width: 750px) {
       .payment-container .button-strike {
+        /* 750px */
         width: 100%; } }
 
 /* .payment-container */
@@ -657,9 +696,11 @@ footer {
   /* .staff-history */ }
   @media (max-width: 47em) {
     .staff-entry {
+      /* 47em */
       width: 100%; } }
   @media (max-width: 600px) {
     .staff-entry {
+      /* 600px */
       margin: 0 0 25px 0; } }
   .staff-entry .staff-head-block {
     top: -25px;
@@ -682,6 +723,7 @@ footer {
       /* .credentials */ }
       @media (max-width: 600px) {
         .staff-entry .staff-head-block .staff-title {
+          /* 600px */
           margin: 50px 0 15px 25px;
           font-size: 16px !important; } }
       .staff-entry .staff-head-block .staff-title .credentials {
@@ -690,6 +732,7 @@ footer {
         /* Query below was Specially designed for use with the Susy grid */ }
         @media (max-width: 600px) {
           .staff-entry .staff-head-block .staff-title .credentials {
+            /* 600px */
             font-size: 16px; } }
     .staff-entry .staff-head-block .thumb-container {
       width: 120px;
@@ -705,12 +748,13 @@ footer {
       /* .missing-thumb */ }
       @media (max-width: 600px) {
         .staff-entry .staff-head-block .thumb-container {
+          /* 600px */
           display: none; } }
       .staff-entry .staff-head-block .thumb-container .missing-thumb {
         top: 17px;
         left: 15px;
         width: 75px;
-        fill: #222222;
+        fill: #A4D9A3 !important;
         position: absolute; }
   .staff-entry .staff-history {
     padding: 60px 10px 10px 10px;
@@ -722,6 +766,7 @@ footer {
     /* <p></p> */ }
     @media (max-width: 600px) {
       .staff-entry .staff-history {
+        /* 600px */
         padding: 25px 10px 10px 10px; } }
     .staff-entry .staff-history > p {
       padding: 0 0 25px 0;
@@ -730,6 +775,7 @@ footer {
       /* Query below was Specially designed for use with the Susy grid */ }
       @media (max-width: 600px) {
         .staff-entry .staff-history > p {
+          /* 600px */
           font-size: 16px; } }
       .staff-entry .staff-history > p:last-child {
         padding: 0; }
@@ -743,15 +789,26 @@ footer {
   /* p */ }
   @media (max-width: 47em) {
     .pre-form-block {
+      /* 47em */
       padding: 0 1em 50px 1em; } }
   .pre-form-block h2 {
-    padding: 0 0 10px 0; }
+    padding: 0 0 10px 0;
+    /* Query below was Specially designed for use with the Susy grid */ }
+    @media (max-width: 600px) {
+      .pre-form-block h2 {
+        /* 600px */
+        font-size: 24px; } }
   .pre-form-block h4 {
     padding: 0 0 10px 0;
     margin: 0 0 10px 0;
     color: #ABABAB;
+    font-size: 20px;
     border-bottom: 2px solid #ABABAB;
-    font-style: italic; }
+    /* Query below was Specially designed for use with the Susy grid */ }
+    @media (max-width: 600px) {
+      .pre-form-block h4 {
+        /* 600px */
+        font-size: 16px; } }
   .pre-form-block p {
     padding: 0 0 25px 0;
     font-size: 20px;
@@ -761,6 +818,7 @@ footer {
       border-bottom: 2px solid #ABABAB; }
     @media (max-width: 600px) {
       .pre-form-block p {
+        /* 600px */
         font-size: 16px; } }
 
 /* .pre-form-block */
@@ -771,6 +829,7 @@ footer {
   /* .main-contact-form */ }
   @media (max-width: 47em) {
     .form-block {
+      /* 47em */
       padding: 0 0 50px 0; } }
   .form-block .main-contact-form {
     /* <form></form> */
@@ -782,6 +841,9 @@ footer {
     /* Query below was Specially designed for use with the Susy grid */
     /* .contact-form-head */
     /* .contact-form-body */ }
+    @media (max-width: 47em) {
+      .form-block .main-contact-form {
+        /* 47em */ } }
     .form-block .main-contact-form .contact-form-head {
       /* <header></header> */
       padding: 0 0 25px 0;
@@ -790,6 +852,7 @@ footer {
       /* p */ }
       @media (max-width: 600px) {
         .form-block .main-contact-form .contact-form-head {
+          /* 600px */
           display: none; } }
       .form-block .main-contact-form .contact-form-head h2 {
         padding: 0 0 10px 0; }
@@ -803,13 +866,25 @@ footer {
       padding: 25px 0 0 0;
       border-top: 2px solid #222222;
       /* Query below was Specially designed for use with the Susy grid */
+      /* .item1 */
+      /* first/middle/last -- name inputs */
       /* .submission-item */
       /* .button */ }
       @media (max-width: 600px) {
         .form-block .main-contact-form .contact-form-body {
+          /* 600px */
           border-top: none; } }
+      .form-block .main-contact-form .contact-form-body .item1 {
+        /* .input-field */ }
+        .form-block .main-contact-form .contact-form-body .item1 .input-field {
+          /* Query below was Specially designed for use with the Susy grid */ }
+          @media (max-width: 600px) {
+            .form-block .main-contact-form .contact-form-body .item1 .input-field {
+              /* 600px */
+              margin: 0 0 10px 0;
+              display: block; } }
       .form-block .main-contact-form .contact-form-body .submission-item {
-        /* <li></li> all items including button */
+        /* <li></li> all other items including button */
         padding: 0 0 25px 0;
         /* outer-label */
         /* .input-field */
@@ -822,9 +897,10 @@ footer {
           /* Query below was Specially designed for use with the Susy grid */ }
           @media (max-width: 600px) {
             .form-block .main-contact-form .contact-form-body .submission-item label {
+              /* 600px */
               font-size: 20px; } }
         .form-block .main-contact-form .contact-form-body .submission-item .input-field {
-          /* inner-label (first/last name) */
+          /* inner-label (current-patient -- radio buttons) */
           /* textarea  (for message box) */
           /* placeholder text */
           /* placeholder effects once input selected */ }
@@ -834,6 +910,7 @@ footer {
             /* Query below was Specially designed for use with the Susy grid */ }
             @media (max-width: 600px) {
               .form-block .main-contact-form .contact-form-body .submission-item .input-field > input {
+                /* 600px */
                 font-size: 20px; } }
           .form-block .main-contact-form .contact-form-body .submission-item .input-field > label {
             font-weight: 300;
@@ -846,6 +923,7 @@ footer {
             /* Query below was Specially designed for use with the Susy grid */ }
             @media (max-width: 600px) {
               .form-block .main-contact-form .contact-form-body .submission-item .input-field > textarea {
+                /* 600px */
                 font-size: 20px; } }
           .form-block .main-contact-form .contact-form-body .submission-item .input-field input::-webkit-input-placeholder {
             padding: 2px 0 0 0;
@@ -894,6 +972,7 @@ footer {
   /* .return-address */ }
   @media (max-width: 600px) {
     .contact-submission-container {
+      /* 600px */
       padding: 10px;
       font-size: 20px; } }
   .contact-submission-container .return-address {
@@ -933,41 +1012,63 @@ footer {
   padding: 0 2em;
   /* .single-resource */ }
   .resource-container .single-resource {
+    margin: 0 0 25px 0;
     position: relative;
-    margin: 0 0 50px 0;
-    /* .resource-name */
+    /* .resource-link */
     /* .resource-description */ }
-    .resource-container .single-resource .resource-name {
-      top: -20px;
-      left: 30px;
-      padding: 5px 10px;
-      border: 5px solid #7587A6;
-      background: #F8F8F8;
-      font-size: 24px;
+    .resource-container .single-resource .resource-link {
+      margin: 20px 35px;
+      display: inline;
       position: absolute;
       /* Query below was Specially designed for use with the Susy grid */
-      /* .resource-link */ }
+      /* .resource-icon */ }
       @media (max-width: 600px) {
-        .resource-container .single-resource .resource-name {
-          font-size: 20px; } }
-      .resource-container .single-resource .resource-name:hover, .resource-container .single-resource .resource-name:focus {
-        border: 5px solid #222222;
-        transition: 0.2s border linear;
-        cursor: pointer; }
-      .resource-container .single-resource .resource-name .resource-link {
-        color: #7587A6; }
-      .resource-container .single-resource .resource-name:hover .resource-link, .resource-container .single-resource .resource-name:focus .resource-link {
-        color: #222222;
-        transition: 0.2s color linear; }
+        .resource-container .single-resource .resource-link {
+          /* 600px */
+          margin: 30px 0 0 15px; } }
+      .resource-container .single-resource .resource-link .resource-icon {
+        padding: 10px;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px 1px #222222;
+        background: #A4D9A3;
+        fill: #7587A6;
+        border: 2px solid #A4D9A3; }
+      .resource-container .single-resource .resource-link:hover .resource-icon, .resource-container .single-resource .resource-link:focus .resource-icon {
+        box-shadow: inset 0 0 10px 1px #222222; }
     .resource-container .single-resource .resource-description {
-      padding: 30px 10px 10px 10px;
+      padding: 25px 10px 25px 150px;
       color: #F8F8F8;
       background: #7587A6;
+      font-size: 24px;
       border: 5px solid #7587A6;
+      /* Query below was Specially designed for use with the Susy grid */
+      /* In terms of simplicity for the clients sake, making something bold in wysig-editor will simply turn the text green. */ }
+      @media (max-width: 600px) {
+        .resource-container .single-resource .resource-description {
+          /* 600px */
+          padding: 25px 10px 25px 100px;
+          font-size: 20px; } }
+      .resource-container .single-resource .resource-description em {
+        font-weight: 300;
+        color: #A4D9A3; }
+
+/* .resource-container */
+.additional-resources {
+  /* <h4></h4> */
+  /* .additional-link-container */ }
+  .additional-resources h3 {
+    padding: 0 0 25px 0; }
+  .additional-resources .additional-link-container {
+    padding: 5px 0;
+    /* .additional-link */ }
+    .additional-resources .additional-link-container .additional-link {
       font-size: 20px;
       /* Query below was Specially designed for use with the Susy grid */ }
       @media (max-width: 600px) {
-        .resource-container .single-resource .resource-description {
+        .additional-resources .additional-link-container .additional-link {
+          /* 600px */
           font-size: 16px; } }
 
-/* .resource-container */
+/* .additional-resources */
