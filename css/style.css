@@ -694,7 +694,6 @@ footer {
   /* <h2></h2> */
   /* <p></p> */ }
   .about-page-intro > h2 {
-    border-bottom: 2px solid #ABABAB;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase; }
