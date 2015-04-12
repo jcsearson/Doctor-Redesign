@@ -48,7 +48,7 @@
 	}  /* <h4></h4> */
 	.additional-link-container {
 		padding: 5px 0;
-		.additional-link {
+		> a {
 			font-size: $font-med;
 			@include bp(venus) {  /* 600px */
 				font-size: $font-small;

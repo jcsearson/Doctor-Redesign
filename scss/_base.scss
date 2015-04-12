@@ -56,8 +56,12 @@ li {
 }
 
 // Makes a piece of text stand out within a body of text
-em {
+strong {
 	font-weight: 700;
+}
+
+em {
+	font-style: italic;
 }
 
 .colored {  // used for the about.php page

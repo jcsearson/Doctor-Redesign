@@ -123,8 +123,11 @@ li {
   .wf-loading li {
     visibility: hidden; }
 
-em {
+strong {
   font-weight: 700; }
+
+em {
+  font-style: italic; }
 
 .colored {
   color: #A4D9A3; }
@@ -1063,11 +1066,11 @@ footer {
   .additional-resources .additional-link-container {
     padding: 5px 0;
     /* .additional-link */ }
-    .additional-resources .additional-link-container .additional-link {
+    .additional-resources .additional-link-container > a {
       font-size: 20px;
       /* Query below was Specially designed for use with the Susy grid */ }
       @media (max-width: 600px) {
-        .additional-resources .additional-link-container .additional-link {
+        .additional-resources .additional-link-container > a {
           /* 600px */
           font-size: 16px; } }
 
