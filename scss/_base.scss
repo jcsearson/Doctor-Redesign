@@ -32,6 +32,9 @@ p {
 	line-height: 1.2;
 	font-size: $font-large;
 	@include font-stack-brand;
+	span {
+		display: inline!important;
+	}
 }
 
 a {
