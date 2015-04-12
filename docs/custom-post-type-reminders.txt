@@ -1,0 +1,47 @@
+Hours
+	1.  monday_thursday_open_hour
+	2.  monday_thursday_close_hour
+	3.  friday_open_hour
+	4.  friday_close_hour
+
+Announcements
+	1.  announcement_header
+	2.  announcement_content
+
+Employees
+	1.	employee_name
+	2.  employee_certification
+	3.  employee_photo
+	4.  employee_biography
+
+Articles
+	1.  article_title_top
+	2.  top_section
+	3.  article_title_bottom
+	4.  bottom_section
+
+Articles -- Page Slugs
+	1.  about-page  --  79
+	2.  after-hours-page  --  87
+	3.  contact-page  --  74
+	4.  home-page  --  72
+	5.  new-patients-page  --  105
+	6.  payment-page  --  82
+	7.  resource-page-pregnant  --  89
+	8.  resource-page-infants  --  95
+	9.  resource-page-toddlers  --  97
+	10.  resource-page-teens  --  103
+	11.  site-disclaimer-page  --  109
+
+Articles -- Category Slugs
+	1.  about  --  11
+	2.  after-hours  --  3
+	3.  contact  --  4
+	4.  home  --  2
+	5.  infant-resources  --  7
+	6.  new-patients  --  5
+	7.  payment  --  6
+	8.  pregnant-resources  --  8
+	9.  site-disclaimer  --  12
+	10.  teen-resources  --  10
+	11.  toddler-resources  --  9

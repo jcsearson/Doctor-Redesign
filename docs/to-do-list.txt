@@ -1,0 +1,19 @@
+1.  Responsive Navigation for Mobile Screens
+	a.  Change to Mobile Burger Icon at 1000px.
+	b.  Alternate Option:  Tab Bar
+		i.  Fixed Width
+		ii.  Position: Relative; Bottom: 0;
+
+2.  Imprint page
+	a.  SVG's  --  Attribution:
+		i.  <div>Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/icons8" title="Icons8">Icons8</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+
+#############################  IN-CASE YOU NEED IT LATER...  ################################
+
+3.  Old Navigation Dropdown Menu
+	<ul class="dropdown-menu">
+		<li class="dropdown-item"><a href="/payment.php">Pay Online</a></li>
+		<li class="dropdown-item"><a href="/new-patients.php">New Patients</a></li>
+		<li class="dropdown-item"><a href="/after-hours.php">After-hours</a></li>
+		<li class="dropdown-item"><a href="/resources.php">Resources</a></li>
+	</ul>  <!-- .dropdown-menu -->
