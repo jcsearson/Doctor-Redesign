@@ -99,24 +99,20 @@
 						<a href="/contact" class="nav-txt-item">Contact</a>
 						<a href="/contact" class="svg-anchor"><?php echo file_get_contents("$homeDirectory/images/svg/contact.svg"); ?></a>
 					</li>
-					<li class="navigation-item dropdown-ignition">
+					<li class="navigation-item">
 						<a href="/payment" class="nav-txt-item">Pay Online</a>
-						<a href="#" class="svg-anchor drop-marker"><?php echo file_get_contents("$homeDirectory/images/svg/more.svg"); ?></a>
-						<ul class="dropdown-menu">
-							<li class="dropdown-item"><a href="/payment">Pay Online</a></li>
-							<li class="dropdown-item"><a href="/new-patients">New Patients</a></li>
-							<li class="dropdown-item"><a href="/after-hours">After-hours</a></li>
-							<li class="dropdown-item"><a href="/resources">Resources</a></li>
-						</ul>  <!-- .dropdown-menu -->
+						<a href="/payment" class="svg-anchor"><?php echo file_get_contents("$homeDirectory/images/svg/pay.svg"); ?></a>
 					</li>  <!-- .navigation-item  .dropdown-ignition -->
-					<li class="navigation-item item-to-dropdown">
-						<a href="/new-patients" class="nav-txt-item">New Patients</a>
-					</li>
-					<li class="navigation-item item-to-dropdown">
+					<li class="navigation-item">
 						<a href="/after-hours" class="nav-txt-item">After-hours</a>
+						<a href="/after-hours" class="svg-anchor"><?php echo file_get_contents("$homeDirectory/images/svg/after-hours.svg"); ?></a>
 					</li>
-					<li class="navigation-item item-to-dropdown">
+					<li class="navigation-item">
 						<a href="/resources" class="nav-txt-item">Resources</a>
+						<a href="/resources" class="svg-anchor"><?php echo file_get_contents("$homeDirectory/images/svg/resources.svg"); ?></a>
+					</li>
+					<li class="navigation-item anchor-item">
+						<a href="/new-patients" class="nav-txt-item">New Patients</a>
 					</li>
 				</ul>  <!-- .navigation-menu -->
 			</nav>
