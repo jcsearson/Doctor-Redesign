@@ -94,3 +94,14 @@ i {
 	color: $lightgray;
 	font-size: $font-small;
 }
+
+// Font Size selection in WYSIGWY editor
+.small-font-size {
+	font-size: $font-small;
+}
+.medium-font-size {
+	font-size: $font-large;
+}
+.large-font-size {
+	font-size: $font-xxl;
+}

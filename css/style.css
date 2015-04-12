@@ -151,6 +151,15 @@ i {
   color: #819090;
   font-size: 16px; }
 
+.small-font-size {
+  font-size: 16px; }
+
+.medium-font-size {
+  font-size: 24px; }
+
+.large-font-size {
+  font-size: 32px; }
+
 /* The following document is only for the most basic layout of this website.  Everything else will be included in the modules.scss file in order to keep things organized. */
 * {
   -moz-box-sizing: border-box;
