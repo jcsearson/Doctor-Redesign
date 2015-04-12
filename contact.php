@@ -8,19 +8,32 @@
 
 <?php get_header(); ?>
 
+	<?php  // specifications for posts
+		$args = array(
+			'post_type'				=> 'articles',
+			'cat'					=> '4',
+		   	'posts_per_page'      	=> '1'
+		);
+		$query = new WP_Query($args);
+		if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+	?>
+
 	<section class="contact-page pre-form-block" role="region">
-		<h2>Want to get in touch with us?</h2>
-		<h4>Please read the following before filling out a form.</h4>
-		<p>E-mail is for <em>non-urgent</em> messages only and will be checked on a daily basis during routine office hours.  Please call the office for more immediate assistance.</p>
-		<p>For children experiencing illness during routine office hours, please call the office at <em>410-601-8383</em> so that an appointment may be scheduled, if necessary.  Every effort is made to ensure that your child is seen within <em>24 hours</em>.  Any messages left with office staff will receive a prompt response.</p>
+		<h2><?php the_field('article_title_top'); ?></h2>
+		<p><?php the_field('top_section'); ?></p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<section class="contact-page form-block">
 		<form id="contact-forms" name="form1" class="main-contact-form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="contact-send">
 			<header class="contact-form-head">
-				<h2>Send us a message or request:</h2>
-				<p>Use this form to send a message to any staff member in our office.  Messages will be checked daily.  Please ensure you provide accurate information on how you may be reached.  This site is for <em>non-urgent</em> messages only.  Please call the office if a prompt response is required.  Please be aware that this is <em>not</em> a secure site.  Do not send confidential information.  By providing your contact email address, be aware that you are consenting to it's use.   Please call the office to discuss any concerns you may have <em>before</em> providing such information.</p>
-				<p class="make-urgent">If this is an emergency, please visit an emergency room or call 911 for assistance!</p>
+				<h2><?php the_field('article_title_bottom'); ?></h2>
+				<p><?php the_field('bottom_section'); ?></p>
+
+				<?php
+					endwhile; endif;
+					wp_reset_query();
+				?>
+
 			</header>  <!-- .contact-form-head -->
 
 			<ul class="contact-form-body">

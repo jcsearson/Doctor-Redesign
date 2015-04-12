@@ -10,19 +10,31 @@
 
 	<?php get_sidebar(); ?>
 
+	<?php  // specifications for posts
+		$args = array(
+			'post_type'				=> 'articles',
+			'cat'					=> '9',
+		   	'posts_per_page'      	=> '1'
+		);
+		$query = new WP_Query($args);
+		if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+	?>
+
 	<section class="main-info-upper main-info" role="region">
-		<h2>Would you like some additional information on making sure your toddler stays healthy?</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, placeat, eligendi? Debitis inventore ducimus hic dignissimos eaque cumque repellat perferendis, labore reprehenderit quasi deserunt deleniti obcaecati, ratione nemo, non aperiam.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt accusantium aut consectetur earum numquam omnis, ut officiis praesentium commodi voluptatibus facere vitae eius delectus quibusdam non quo unde sed possimus.</p>
+		<h2><?php the_field('article_title_top'); ?></h2>
+		<p><?php the_field('top_section'); ?></p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<div class="main-divider"></div>
 
 	<section class="main-info-lower main-info additional-resources" role="region">
-		<h3>Additional Resources (Toddler Healthcare)</h3>
-		<p class="additional-link-container"><a href="#" class="additional-link">WebMD</a></p>
-		<p class="additional-link-container"><a href="#" class="additional-link">MedicineNet</a></p>
-		<p class="additional-link-container"><a href="#" class="additional-link">National Health Foudation</a></p>
+		<h3><?php the_field('article_title_bottom'); ?></h3>
+		<p class="additional-link-container"><a href="#" class="additional-link"><?php the_field('bottom_section'); ?></a></p>
 	</section>  <!-- .main-info-lower   .main-info -->
+
+	<?php
+		endwhile; endif;
+		wp_reset_query();
+	?>
 
 <?php get_footer(); ?>

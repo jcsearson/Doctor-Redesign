@@ -10,19 +10,31 @@
 
 	<?php get_sidebar(); ?>
 
+	<?php  // specifications for posts
+		$args = array(
+			'post_type'				=> 'articles',
+			'cat'					=> '3',
+		   	'posts_per_page'      	=> '1'
+		);
+		$query = new WP_Query($args);
+		if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+	?>
+
 	<section class="main-info-upper main-info" role="region">
-		<h2>After Hours Services:</h2>
-		<p>Beginning <em>November 1, 2014</em>, there have been two important changes in the after-hours on-call arrangement at this office.</p>
-		<p>Dr. Caplan and seven other pediatricians in the community, including Dr. Tellerman, will be providing after-hours, on-call services for all patients in this office.</p>
-		<p>Each time your child has an urgent medical problem after regular office hours, you must first phone the office at <em>410-601-8383</em> to listen to a recorded message telling you the name and phone number of the pediatrician who is on-call.  Each Doctor has a different number, so it is very important that you call our office and then call the number provided on the recording.</p>
-		<p>In addition, the doctor who is on-call on weekend days or holidays may open their respective office for a short time late in the morning, for children who are ill and need to be examined before the next weekday.  If you think that your child needs to be seen on a weekend day or holiday, call early in the day, between 8am and 9am to talk with the provider on-call.</p>
+		<h2><?php the_field('article_title_top'); ?></h2>
+		<p><?php the_field('top_section'); ?></p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<div class="main-divider"></div>
 
 	<section class="main-info-lower main-info" role="region">
-		<h2 class="make-urgent">If the problem could be life threatening, please go to the nearest emergency room and/or dial 911 for immediate assistance.</h2>
-		<p>Please note that these after-hours on-call changes took effect on <em>November 1, 2014</em>.</p>
+		<h2><?php the_field('article_title_bottom'); ?></h2>
+		<p><?php the_field('bottom_section'); ?></p>
 	</section>  <!-- .main-info-lower   .main-info -->
+
+	<?php
+		endwhile; endif;
+		wp_reset_query();
+	?>
 
 <?php get_footer(); ?>

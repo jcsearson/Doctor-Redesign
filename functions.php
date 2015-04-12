@@ -21,16 +21,16 @@ $args = array(
 'hierarchical' => true,
 'description' => 'Custom post type for Staff.',
 'supports' => array( 	'title',
-						'editor',
-						'excerpt',
-						'author',
-						'thumbnail',
-						'trackbacks',
-						'custom-fields',
-						'comments',
-						'revisions',
-						'page-attributes',
-						'post-formats'),
+			'editor',
+			'excerpt',
+			'author',
+			'thumbnail',
+			'trackbacks',
+			'custom-fields',
+			'comments',
+			'revisions',
+			'page-attributes',
+			'post-formats'),
 'public' => true,
 'show_ui' => true,
 'show_in_menu' => true,
@@ -70,16 +70,16 @@ $args = array(
 'hierarchical' => true,
 'description' => 'Custom post type for Resources.',
 'supports' => array( 	'title',
-						'editor',
-						'excerpt',
-						'author',
-						'thumbnail',
-						'trackbacks',
-						'custom-fields',
-						'comments',
-						'revisions',
-						'page-attributes',
-						'post-formats'),
+			'editor',
+			'excerpt',
+			'author',
+			'thumbnail',
+			'trackbacks',
+			'custom-fields',
+			'comments',
+			'revisions',
+			'page-attributes',
+			'post-formats'),
 'public' => true,
 'show_ui' => true,
 'show_in_menu' => true,
@@ -95,6 +95,58 @@ $args = array(
 );
 add_theme_support('post-thumbnails');
 register_post_type( 'resources', $args );
+}
+
+/* Template Page -- Articles or Messages (Main Content) -- Custom Post Type */
+add_action( 'init', 'register_cpt_articles' );
+function register_cpt_articles() {
+$labels = array(
+'name' => _x( 'Articles', 'articles' ),
+'singular_name' => _x( 'Article', 'article' ),
+'add_new' => _x( 'Add New', 'add new' ),
+'add_new_item' => _x( 'Add New Article', 'add new article' ),
+'edit_item' => _x( 'Edit Article', 'edit article' ),
+'new_item' => _x( 'New Article', 'new article' ),
+'view_item' => _x( 'View Article', 'view article' ),
+'search_items' => _x( 'Search Articles', 'search articles' ),
+'not_found' => _x( 'There are currently no articles.', 'there are currently no articles.' ),
+'not_found_in_trash' => _x( 'Not found in Trash', 'not found in trash' ),
+'parent_item_colon' => _x( 'Articles:', 'articles:' ),
+'menu_name' => _x( 'Articles', 'articles' ),
+);
+$args = array(
+'labels' => $labels,
+'hierarchical' => true,
+'description' => 'Custom post type for Articles.',
+'supports' => array(      'title',
+                                    'editor',
+                                    'excerpt',
+                                    'author',
+                                    'thumbnail',
+                                    'trackbacks',
+                                    'custom-fields',
+                                    'comments',
+                                    'revisions',
+                                    'page-attributes',
+                                    'post-formats'),
+'taxonomies' => array( 'category',
+                                    'post_tag',
+                                    'page-category' ),
+'public' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'menu_icon' => 'dashicons-edit',
+'show_in_nav_menus' => true,
+'publicly_queryable' => true,
+'exclude_from_search' => false,
+'has_archive' => true,
+'query_var' => true,
+'can_export' => true,
+'rewrite' => true,
+'capability_type' => 'post'
+);
+add_theme_support('post-thumbnails');
+register_post_type( 'articles', $args );
 }
 
 /* Change the preset Wordpress sidebar label */
@@ -128,13 +180,14 @@ add_action( 'admin_menu', 'change_post_menu_label' );
 
 // CUSTOMIZE ADMIN MENU ORDER
 function custom_menu_order($menu_ord) {
-      if (!$menu_ord) return true;
-      return array(
-      'index.php', // dashboard tab
-      'edit.php', // posts tab
-      'edit.php?post_type=employees',  // employees tab
-      'edit.php?post_type=resources',  // resources tab
-      'upload.php', // media tab
+            if (!$menu_ord) return true;
+            return array(
+            'index.php', // dashboard tab
+            'edit.php', // posts tab
+            'edit.php?post_type=articles',  // staff tab
+            'edit.php?post_type=staff',  // staff tab
+            'edit.php?post_type=resources',  // resources tab
+            'upload.php', // media tab
     	);
 }
 

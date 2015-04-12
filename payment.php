@@ -11,9 +11,25 @@
 	<?php get_sidebar(); ?>
 
 	<section class="main-info-upper main-info" role="region">
-		<h2>Pay Bill Online:</h2>
-		<p><em>Instructions:</em> Click the "<em>PAY ONLINE</em>" button below.  This will take you to another page at <i>payments.paysimple.com</i> where you will see a button that says "<em>Click Here to Pay Now</em>".  You should then click on this button and follow the directions on the page.</p>
-		<p><em>Note: </em> <em>Please enter the name as it appears on your bill</em>, to ensure that the appropriate account is credited.  You can pay with your <i>Mastercard</i>, <i>Visa</i>, <i>Discover Card</i> or from your <i>Checking</i> account.Thank you!</p>
+
+		<?php  // specifications for posts
+			$args = array(
+				'post_type'				=> 'articles',
+				'cat'					=> '6',
+			   	'posts_per_page'      	=> '1'
+			);
+			$query = new WP_Query($args);
+			if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+		?>
+
+		<h2><?php the_field('article_title_top'); ?></h2>
+		<p><?php the_field('top_section'); ?></p>
+
+		<?php
+			endwhile; endif;
+			wp_reset_query();
+		?>
+
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<section class="payment-container main-info-lower" role="region">

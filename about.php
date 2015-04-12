@@ -11,9 +11,29 @@
 	<?php get_sidebar(); ?>
 
 	<section class="main-info about-page-intro" role="region">
-		<h2>Meet Our Staff!!!</h2>
-		<p><em>It is important to us that you feel comfortable from the moment you step through our doors to the time that you leave us.  Our outstanding staff will make this time an easy one for both the child and parent!</em></p>
+
+		<?php  // specifications for posts
+			$args = array(
+				'post_type'				=> 'articles',
+				'cat'					=> '11',
+			   	'posts_per_page'      	=> '1'
+			);
+			$query = new WP_Query($args);
+			if ($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+		?>
+
+		<h2><?php the_field('article_title_top'); ?></h2>
+		<p><?php the_field('top_section'); ?></p>
+
+		<?php
+			endwhile; endif;
+			wp_reset_query();
+		?>
+
 	</section>  <!-- .main-info-upper   .main-info  .staff-entry  -->
+
+
+
 
 	<?php  // specifications for posts
 		$args = array(
