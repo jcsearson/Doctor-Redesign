@@ -33,16 +33,16 @@
 
 			/* Formatting Premptive Text Based on if they are a current patient or not */
 			if ($patient === 'Yes') {
-				$message .= "<hr><em>Patient's Name: </em>" . $full_name . '.<br>';
+				$message .= "<hr><strong>Patient's Name: </strong>" . $full_name . '.<br>';
 			} else {
-				$message .= "<hr><em>Name: </em>" . $full_name . '.<br>';
+				$message .= "<hr><strong>Name: </strong>" . $full_name . '.<br>';
 			}
 
 			/* Formatting the Message to include all Variables */
-			$message .= '<em>Email: </em>' . $email .'<br>';
-			$message .= '<em>Phone: </em>' . $phone . '<br>';
-			$message .= '<em>Current Patient? </em>' . $patient . '.<br><br>';
-			$message .= '<em>Message: </em>' . $_POST[ 'message' ];
+			$message .= '<strong>Email: </strong>' . $email .'<br>';
+			$message .= '<strong>Phone: </strong>' . $phone . '<br>';
+			$message .= '<strong>Current Patient? </strong>' . $patient . '.<br><br>';
+			$message .= '<strong>Message: </strong>' . $_POST[ 'message' ];
 
 			// ***********************************
 			//  Change for Live:
