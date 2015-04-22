@@ -15,27 +15,37 @@
 			/* Assign inputs to variables, then test all inputs for proper completion, then do nothing if passes test. */
 			$emptyNameError = $wrongNameError = $nameError = $emailError = $emptyEmailError = "";
 			$first_name = $middle_name = $last_name = $email = $phone = "";
+
+			function test_input($data)
+			{
+				/*  Function declaration... */
+			    	$data = trim($data);
+			   	$data = stripslashes($data);
+			   	$data = htmlspecialchars($data);
+			   	return $data;
+			}
+
 			if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
 				/* Check that a first name was entered and that it was valid. */
 				if ( empty( $_POST[ 'first_name' ] ) ) {
 					$emptyNameError = "A first name is required.";
 				} else {
 					$first_name = test_input( $_POST[ 'first_name' ] );
-					if ( !preg_match( "/^[a-zA-Z ]*$/	", $first_name ) ) {
+					if ( !preg_match( "/^[a-zA-Z ]*$/ ", $first_name ) ) {
 						$wrongNameError = "Only letters and spaces allowed.";
 					}
 				}
 				/* Optional - Only check to make sure its letters - not characters. */
 				$middle_name = test_input( $_POST[ 'middle_name' ] );
-				if ( !preg_match( "/^[a-zA-Z ]*$/	", $middle_name ) ) {
+				if ( !preg_match( "/^[a-zA-Z ]*$/ ", $middle_name ) ) {
 					$nameError = "Only letters and spaces allowed.";
 				}
 				/* Check that a last name was entered and that it was valid. */
 				if ( empty( $_POST[ 'last_name' ] ) ) {
-					$emptyNameError = "A last name is required."
+					$emptyNameError = "A last name is required.";
 				} else {
 					$last_name = test_input($_POST[ 'last_name' ]);
-					if ( !preg_match( "/^[a-zA-Z ]*$/	", $last_name ) ) {
+					if ( !preg_match( "/^[a-zA-Z ]*$/ ", $last_name ) ) {
 						$nameError = "Only letters and spaces allowed.";
 					}
 				}
