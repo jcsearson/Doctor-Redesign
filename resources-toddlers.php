@@ -1,7 +1,10 @@
 <?php
 
 	/*
-		Template Name: Resources-toddlers
+		Template Name: Toddlers
+	*/
+	/*
+		Parent Template: Resources
 	*/
 	/*This template provides helpful resources for patients of the practice.*/
 ?>

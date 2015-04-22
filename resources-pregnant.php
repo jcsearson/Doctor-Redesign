@@ -1,7 +1,10 @@
 <?php
 
 	/*
-		Template Name: Resources-pregnant
+		Template Name: Pregnant
+	*/
+	/*
+		Parent Template: Resources
 	*/
 	/*This template provides helpful resources for patients of the practice.*/
 ?>

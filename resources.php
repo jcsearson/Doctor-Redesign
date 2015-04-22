@@ -17,20 +17,20 @@
 
 	<section class="resource-container" role="region">
 		<div class="single-resource">
-			<a href="/resources-pregnant" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/pregnant.svg"); ?></a>
-			<p class="resource-description">Click the button on the left to view information on having a healthy <a href="/resources-pregnant"><em>pregnancy</em></a>.</p>
+			<a href="/resources/pregnant" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/pregnant.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on having a healthy <a href="/resources/pregnant"><em>pregnancy</em></a>.</p>
 		</div>  <!-- .single-resource -->
 		<div class="single-resource">
-			<a href="/resources-infants" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/infant.svg"); ?></a>
-			<p class="resource-description">Click the button on the left to view information on <a href="/resources-infants"><em>infant</em></a> care.</p>
+			<a href="/resources/infants" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/infant.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources/infants"><em>infant</em></a> care.</p>
 		</div>  <!-- .single-resource -->
 		<div class="single-resource">
-			<a href="/resources-toddlers" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/toddler.svg"); ?></a>
-			<p class="resource-description">Click the button on the left to view information on <a href="/resources-toddlers"><em>toddler</em></a> health.</p>
+			<a href="/resources/toddlers" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/toddler.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources/toddlers"><em>toddler</em></a> health.</p>
 		</div>  <!-- .single-resource -->
 		<div class="single-resource">
-			<a href="/resources-teens" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/teen.svg"); ?></a>
-			<p class="resource-description">Click the button on the left to view information on <a href="/resources-teens"><em>teen</em></a> health.</p>
+			<a href="/resources/teens" class="resource-link"><?php echo file_get_contents("$homeDirectory/images/svg/teen.svg"); ?></a>
+			<p class="resource-description">Click the button on the left to view information on <a href="/resources/teens"><em>teen</em></a> health.</p>
 		</div>  <!-- .single-resource -->
 	</section>  <!-- .resource-container -->
 
