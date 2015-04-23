@@ -317,17 +317,24 @@ main {
 
 /* main */
 .title {
-  padding: 25px 0 25px 15px;
-  text-shadow: 1px 1px 2px #222222;
-  color: #222222;
-  background: #F8F8F8;
-  /* Query below was Specially designed for use with the Susy grid */ }
+  padding: 25px 25px 25px 15px;
+  background: #e8ebf0;
+  /* Query below was Specially designed for use with the Susy grid */
+  /* .practice-title */ }
   @media (max-width: 600px) {
     .title {
-      /* 600px */
-      padding: 15px 0 25px 0;
-      font-size: 28px;
-      text-align: center; } }
+      padding: 25px 15px;
+      height: 70px; } }
+  .title .practice-title {
+    width: 100%;
+    text-shadow: 2px 2px 2px #7587A6;
+    color: #222222;
+    background: url("images/svg/heartbeat.svg") right no-repeat;
+    /* Query below was Specially designed for use with the Susy grid */ }
+    @media (max-width: 600px) {
+      .title .practice-title {
+        /* 600px */
+        font-size: 28px; } }
 
 /* .title */
 .landing-image {
@@ -372,8 +379,6 @@ main {
       top: 0;
       font-size: 16px;
       position: relative; }
-    .landing-image .office-hours .head-clock {
-      font-style: italic; }
   .landing-image .inner-arrow-down {
     bottom: -84px;
     left: -1px;
@@ -672,6 +677,7 @@ footer {
     color: #222222;
     font-size: 20px;
     border: 5px solid #2176C7;
+    box-shadow: 0 0 5px 2px #ABABAB;
     text-transform: none;
     text-align: center;
     /* Query below was Specially designed for use with the Susy grid */ }
@@ -700,6 +706,20 @@ footer {
         width: 100%; } }
 
 /* .payment-container */
+.payment-box-top {
+  padding: 0 15px 20px 0;
+  /* Query below was Specially designed for use with the Susy grid */ }
+  @media (max-width: 750px) {
+    .payment-box-top {
+      padding: 0 0 20px 0; } }
+  .payment-box-top h2 {
+    padding: 0 0 10px 30px;
+    margin: 0 0 30px 0;
+    border-bottom: 5px solid #2176C7; }
+  .payment-box-top p {
+    padding: 0 0 20px 30px; }
+
+/* .payment-box-top */
 .about-page-intro {
   padding-bottom: 0;
   margin-bottom: 10px;
@@ -1084,5 +1104,7 @@ footer {
         .additional-resources > p a {
           /* 600px */
           font-size: 16px; } }
+      .additional-resources > p a:hover, .additional-resources > p a:focus {
+        color: #44a142 !important; }
 
 /* .additional-resources */
