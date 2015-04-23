@@ -25,12 +25,12 @@
 		<p><?php the_field('top_section'); ?></p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
-	<div class="main-divider"></div>
-
 	<section class="main-info-lower main-info" role="region">
 		<h2><?php the_field('article_title_bottom'); ?></h2>
 		<p><?php the_field('bottom_section'); ?></p>
 	</section>  <!-- .main-info-lower   .main-info -->
+
+	<div class="main-divider"></div>
 
 	<?php
 		endwhile; endif;
