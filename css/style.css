@@ -111,7 +111,7 @@ a {
   .wf-loading a {
     visibility: hidden; }
   a:hover, a:focus {
-    color: #9B859D;
+    color: #44a142;
     transition: 0.2s color linear; }
 
 span {
@@ -203,9 +203,9 @@ body {
   *margin-left: -0.5em;
   display: inline;
   /* Query below was Specially designed for use with the Susy grid */ }
-  @media (max-width: 47em) {
+  @media (max-width: 850px) {
     .recent-news {
-      /* 47em */
+      /* 850px */
       display: none; } }
 
 .main-info {
@@ -214,9 +214,9 @@ body {
   margin-right: 0.93458%;
   display: inline;
   /* Query below was Specially designed for use with the Susy grid */ }
-  @media (max-width: 47em) {
+  @media (max-width: 850px) {
     .main-info {
-      /* 47em */
+      /* 850px */
       width: 100%;
       float: left;
       margin-right: 0.93458%;
@@ -228,9 +228,9 @@ body {
   margin-right: 0.93458%;
   display: inline;
   /* Query below was Specially designed for use with the Susy grid */ }
-  @media (max-width: 47em) {
+  @media (max-width: 850px) {
     .resource-container {
-      /* 47em */
+      /* 850px */
       width: 100%;
       float: left;
       margin-right: 0.93458%;
@@ -249,9 +249,9 @@ body {
   *margin-left: -0.5em;
   display: inline;
   /* Query below was Specially designed for use with the Susy grid */ }
-  @media (max-width: 47em) {
+  @media (max-width: 850px) {
     .contact-submission-container {
-      /* 47em */
+      /* 850px */
       width: 83.17757%;
       float: left;
       margin-right: 0.93458%;
@@ -572,6 +572,14 @@ nav {
       .main-info-upper a {
         /* 600px */
         font-size: 16px; } }
+  .main-info-upper p img {
+    margin: 0 25px 5px 0;
+    border: 5px solid #ABABAB;
+    float: left;
+    /* Query below was Specially designed for use with the Susy grid */ }
+    @media (max-width: 600px) {
+      .main-info-upper p img {
+        display: none; } }
 
 /* .main-info-upper */
 .main-info-lower {
@@ -1092,7 +1100,5 @@ footer {
         .additional-resources > p a {
           /* 600px */
           font-size: 16px; } }
-      .additional-resources > p a:hover, .additional-resources > p a:focus {
-        color: #44a142 !important; }
 
 /* .additional-resources */

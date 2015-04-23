@@ -53,9 +53,6 @@
 			@include bp(venus) {  /* 600px */
 				font-size: $font-small;
 			}
-			&:hover, &:focus {
-				color: darken($green, 30)!important;
-			}
 		}  /* .additional-link */
 	}  /* .additional-link-container */
 }  /* .additional-resources */

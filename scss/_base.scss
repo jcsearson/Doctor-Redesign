@@ -44,7 +44,7 @@ a {
 	display: inline-block;
 	@include font-stack-brand;
 	&:hover, &:focus {
-		color: $lightpurple;
+		color: darken($green, 30);
 		transition: 0.2s color linear;
 	}
 }

@@ -261,6 +261,14 @@ nav {
 			font-size: $font-small;
 		}
 	}  /* <a></a> */
+	p img {
+		margin:0 25px 5px 0;
+		border: 5px solid $gray;
+		float:left;
+		@include bp(venus) {
+			display: none;
+		}
+	}
 }  /* .main-info-upper */
 
 .main-info-lower {
