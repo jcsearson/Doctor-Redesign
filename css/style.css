@@ -1077,5 +1077,7 @@ footer {
         .additional-resources > p a {
           /* 600px */
           font-size: 16px; } }
+      .additional-resources > p a:hover, .additional-resources > p a:focus {
+        color: #44a142 !important; }
 
 /* .additional-resources */
