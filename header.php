@@ -70,7 +70,9 @@
 		<div class="head-container">
 
 			<header class="clearfix" role="banner">
-				<h1 class="title"><em>Steven E. Caplan, MD</em></h1>
+				<div class="title">
+					<h1 class="practice-title"><strong>Steven E. Caplan, M.D.</strong></h1>
+				</div>
 				<div class="landing-image">
 					<section class="office-hours" role="region">
 						<h3>Hours of Operation:</h3>
