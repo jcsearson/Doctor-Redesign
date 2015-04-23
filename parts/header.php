@@ -30,7 +30,7 @@
 
 		<header class="clearfix" role="banner">
 			<div class="title">
-				<h1 class="practice-title"><strong>Steven E. Caplan, MD</strong></h1>
+				<h1 class="practice-title"><strong>Steven E. Caplan, M.D.</strong></h1>
 			</div>
 			<div class="landing-image">
 				<section class="office-hours" role="region">
