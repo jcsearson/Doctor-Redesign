@@ -709,9 +709,14 @@ footer {
     .payment-box-top {
       padding: 0 0 20px 0; } }
   .payment-box-top h2 {
+    width: 65%;
     padding: 0 0 10px 30px;
     margin: 0 0 30px 0;
-    border-bottom: 5px solid #2176C7; }
+    border-bottom: 5px solid #2176C7;
+    /* Query below was Specially designed for use with the Susy grid */ }
+    @media (max-width: 750px) {
+      .payment-box-top h2 {
+        width: 100%; } }
   .payment-box-top p {
     padding: 0 0 20px 30px; }
 
