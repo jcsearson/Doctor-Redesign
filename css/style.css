@@ -311,7 +311,8 @@ main {
   /* .practice-title */ }
   @media (max-width: 600px) {
     .title {
-      padding: 15px 15px 25px 0; } }
+      padding: 25px 25px 25px 15px;
+      height: 70px; } }
   .title .practice-title {
     width: 100%;
     text-shadow: 1px 1px 2px #222222;
@@ -321,8 +322,7 @@ main {
     @media (max-width: 600px) {
       .title .practice-title {
         /* 600px */
-        font-size: 28px;
-        text-align: center; } }
+        font-size: 28px; } }
 
 /* .title */
 .landing-image {
