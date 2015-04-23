@@ -17,15 +17,21 @@ main {
 }  /* main */
 
 .title {
-	padding: 25px 0 25px 15px;
-	text-shadow: 1px 1px 2px $black;
-	color: $black;
-	background: $white;
-	@include bp(venus) {  /* 600px */
-		padding: 15px 0 25px 0;
-		font-size: $font-xl;
-		text-align: center;
+	padding: 25px 25px 25px 15px;
+	background: lighten($lightblue, 35);
+	@include bp(venus) {
+		padding: 15px 15px 25px 0;
 	}
+	.practice-title {
+		width: 100%;
+		text-shadow: 1px 1px 2px $black;
+		color: $black;
+		background: url('../images/svg/heartbeat.svg') right no-repeat;
+		@include bp(venus) {  /* 600px */
+			font-size: $font-xl;
+			text-align: center;
+		}
+	}  /* .practice-title */
 }  /* .title */
 
 .landing-image {
@@ -63,7 +69,7 @@ main {
 			position: relative;
 		}  /* <p></p> */
 		.head-clock {
-			font-style: italic;
+			//font-style: italic;
 		}  /* .head-clock */
 	}  /* .ofice-hours */
 	.inner-arrow-down {
