@@ -306,16 +306,16 @@ main {
 /* main */
 .title {
   padding: 25px 25px 25px 15px;
-  background: #e2e5ec;
+  background: #e8ebf0;
   /* Query below was Specially designed for use with the Susy grid */
   /* .practice-title */ }
   @media (max-width: 600px) {
     .title {
-      padding: 25px 25px 25px 15px;
+      padding: 25px 15px;
       height: 70px; } }
   .title .practice-title {
     width: 100%;
-    text-shadow: 1px 1px 2px #222222;
+    text-shadow: 2px 2px 2px #7587A6;
     color: #222222;
     background: url("../images/svg/heartbeat.svg") right no-repeat;
     /* Query below was Specially designed for use with the Susy grid */ }

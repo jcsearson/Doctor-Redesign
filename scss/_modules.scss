@@ -18,14 +18,14 @@ main {
 
 .title {
 	padding: 25px 25px 25px 15px;
-	background: lighten($lightblue, 35);
+	background: lighten($lightblue, 37);
 	@include bp(venus) {
-		padding: 25px 25px 25px 15px;
+		padding: 25px 15px;
 		height: 70px;
 	}
 	.practice-title {
 		width: 100%;
-		text-shadow: 1px 1px 2px $black;
+		text-shadow: 2px 2px 2px $lightblue;
 		color: $black;
 		background: url('../images/svg/heartbeat.svg') right no-repeat;
 		@include bp(venus) {  /* 600px */
