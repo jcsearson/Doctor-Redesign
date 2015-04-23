@@ -22,7 +22,7 @@
 
 	<section class="main-info-upper main-info" role="region">
 		<h2><?php the_field('article_title_top'); ?></h2>
-		<p><?php the_field('top_section'); ?></p>
+		<p><img src="<?php echo $homeDirectory; ?>/images/content/dr-caplan-office.jpg" alt=""><?php the_field('top_section'); ?></p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<div class="main-divider"></div>
