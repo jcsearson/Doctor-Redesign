@@ -11,6 +11,7 @@
 		color: $black;
 		font-size: $font-med;
 		border: 5px solid $blue;
+		box-shadow: 0 0 5px 2px $gray;
 		text-transform: none;
 		text-align: center;
 		@include bp(earth) {  /* 750px */
@@ -37,3 +38,18 @@
 		}
 	}  /* .button-strike */
 }  /* .payment-container */
+
+.payment-box-top {
+	padding: 0 15px 20px 0;
+	@include bp(earth) {
+		padding: 0 0 20px 0;
+	}
+	h2 {
+		padding: 0 0 10px 30px;
+		margin: 0 0 30px 0;
+		border-bottom: 5px solid $blue;
+	}
+	p {
+		padding: 0 0 20px 30px;
+	}
+}  /* .payment-box-top */

@@ -5,8 +5,8 @@
 
 	<?php include("parts/sidebar.php"); ?>
 
-	<section class="main-info-upper main-info" role="region">
-		<h2>Pay Bill Online:</h2>
+	<section class="payment-box-top main-info" role="region">
+		<h2>Pay Your Bill Online!</h2>
 		<p><strong>Instructions:</strong> Click the "<strong>PAY ONLINE</strong>" button below.  You can pay with your <em>Mastercard</em>, <em>Visa</em>, <em>Discover Card</em> or from your <em>Checking</em> account.</p>
 		<p><strong>Note: </strong> <strong>Please enter the name as it appears on your bill</strong>, to ensure that the appropriate account is credited.  Thank you!</p>
 	</section>  <!-- .main-info-upper   .main-info -->
