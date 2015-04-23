@@ -10,7 +10,7 @@
 
 	<?php get_sidebar(); ?>
 
-	<section class="main-info-upper main-info" role="region">
+	<section class="payment-box-top main-info" role="region">
 
 		<?php  // specifications for posts
 			$args = array(
