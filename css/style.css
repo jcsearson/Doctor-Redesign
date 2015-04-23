@@ -665,6 +665,7 @@ footer {
     color: #222222;
     font-size: 20px;
     border: 5px solid #2176C7;
+    box-shadow: 0 0 5px 2px #ABABAB;
     text-transform: none;
     text-align: center;
     /* Query below was Specially designed for use with the Susy grid */ }
@@ -693,6 +694,20 @@ footer {
         width: 100%; } }
 
 /* .payment-container */
+.payment-box-top {
+  padding: 0 15px 20px 0;
+  /* Query below was Specially designed for use with the Susy grid */ }
+  @media (max-width: 750px) {
+    .payment-box-top {
+      padding: 0 0 20px 0; } }
+  .payment-box-top h2 {
+    padding: 0 0 10px 30px;
+    margin: 0 0 30px 0;
+    border-bottom: 5px solid #2176C7; }
+  .payment-box-top p {
+    padding: 0 0 20px 30px; }
+
+/* .payment-box-top */
 .about-page-intro {
   padding-bottom: 0;
   margin-bottom: 10px;
