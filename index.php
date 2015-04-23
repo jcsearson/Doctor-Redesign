@@ -7,7 +7,7 @@
 
 	<section class="main-info-upper main-info" role="region">
 		<h2>Welcome to the Office of Steven E. Caplan!</h2>
-		<p>The office of Steven E.  Caplan M.D., PA. has provided the highest quality pediatric care in a warm, friendly and compassionate environment since 1988.  Our practice is proud to provide services to families of diverse racial, religious and socio-economic groups from birth to adulthood.  The friendly office staff is available to ensure that families receive assistance with all their needs.  The office is based on the campus of Sinai Hospital in Baltimore City, close to major highways and public transportation.    The practice includes Dr. Steven Caplan, Catherine Searson (Nurse Practitioner), Wendy Miller (Lactation Specialist) and Karen Mandwelle  Caplan (Clinical Social Worker).</p>
+		<p><img src="images/content/dr-caplan-office.jpg" alt="">The office of Steven E.  Caplan M.D., PA. has provided the highest quality pediatric care in a warm, friendly and compassionate environment since 1988.  Our practice is proud to provide services to families of diverse racial, religious and socio-economic groups from birth to adulthood.  The friendly office staff is available to ensure that families receive assistance with all their needs.  The office is based on the campus of Sinai Hospital in Baltimore City, close to major highways and public transportation.    The practice includes Dr. Steven Caplan, Catherine Searson (Nurse Practitioner), Wendy Miller (Lactation Specialist) and Karen Mandwelle  Caplan (Clinical Social Worker).</p>
 		<p><a href="contact.php">Please contact us for a consultation!</a></p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
