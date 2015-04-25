@@ -47,6 +47,9 @@ a {
 		color: darken($green, 30);
 		transition: 0.2s color linear;
 	}
+	@include bp(mercury) {
+		font-size: $font-small;
+	}
 }
 
 span {
