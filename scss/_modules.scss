@@ -17,19 +17,28 @@ main {
 }  /* main */
 
 .title {
-	padding: 25px 25px 25px 15px;
-	background: lighten($lightblue, 37);
+	padding: 25px 45px;
+	margin: 0;
+	background: $blue;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
 	@include bp(venus) {
 		padding: 25px 15px;
 		height: 70px;
 	}
 	.practice-title {
 		width: 100%;
-		text-shadow: 2px 2px 2px $lightblue;
-		color: $black;
-		background: url('../images/svg/heartbeat.svg') right no-repeat;
+		text-shadow: 2px 2px 2px $black;
+		letter-spacing: 1px;
+		color: $white;
+		text-transform: uppercase;
+		background: $blue url('../images/svg/heartbeat.svg') right no-repeat;
 		@include bp(venus) {  /* 600px */
-			font-size: $font-xl;
+			font-size: $font-large;
+			background: $blue;
+		}
+		@include bp(mercury) {  /* 600px -- Mobile Screens */
+			letter-spacing: none;
+			font-size: $font-med;
 		}
 	}  /* .practice-title */
 }  /* .title */
@@ -316,13 +325,15 @@ footer {
 		}  /* .foot-location-info */
 		.foot-contact-info {
 			margin: 0 100px 0 0;
-			color: $white;
 			@include bp(mars) {  /* 850px */
 				margin: 0 25px 0 0;
 			}
 			@include bp(moon) {  /* 700px */
 				margin: 0 auto 25px auto;
 				display: block;
+			}
+			p {
+				color: $white!important;
 			}
 		}  /* .foot-contact-info */
 	}  /* .top-footer */
