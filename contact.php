@@ -23,19 +23,13 @@
 		<p><?php the_field('top_section'); ?></p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
+	<?php
+		endwhile; endif;
+		wp_reset_query();
+	?>
+
 	<section class="contact-page form-block">
 		<form id="contact-forms" name="form1" class="main-contact-form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="contact-send">
-			<header class="contact-form-head">
-				<h2><?php the_field('article_title_bottom'); ?></h2>
-				<p><?php the_field('bottom_section'); ?></p>
-
-				<?php
-					endwhile; endif;
-					wp_reset_query();
-				?>
-
-			</header>  <!-- .contact-form-head -->
-
 			<ul class="contact-form-body">
 				<li class="submission-item item1">
 					<label for="Field1" class="first-name">
@@ -170,7 +164,7 @@
 				</li>  <!-- .item4 -->
 				<li class="submission-item item5">
 					<label for="Field5" class="message">
-						Leave your message below. Please identify the sender of the message. For medication refill requests, please provide medication name, dosage and whether script is to be collected or should be mailed. Please provide pharmacy phone number where appropriate.
+						Message
 					</label>
 					<span class="message-box input-field">
 						<textarea
