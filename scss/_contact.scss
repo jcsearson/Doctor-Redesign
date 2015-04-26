@@ -37,23 +37,6 @@
 		margin: 0 5%;
 		background: lighten($twitterblue, 25);
 		border: 5px solid $black;
-		.contact-form-head {  /* <header></header> */
-			padding: 0 0 25px 0;
-			@include bp(venus) {  /* 600px */
-				display: none;
-			}
-			h2 {
-				padding: 20px 0 10px 0;
-				border-top: 2px solid $black;
-			}  /* h2 */
-			p {
-				padding: 0 0 10px 0;
-				font-size: $font-med;
-				&:last-child {
-					border-bottom: 2px solid $black;
-				}
-			}  /* p */
-		}  /* .contact-form-head */
 		.contact-form-body {  /* <ul></ul> */
 			.item1 {
 				.input-field {

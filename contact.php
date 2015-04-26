@@ -7,16 +7,13 @@
 		<h2>Want to get in touch with us?</h2>
 		<p>E-mail is for <strong>non-urgent</strong> messages only and will be checked on a daily basis during routine office hours.  Please call the office for more immediate assistance.</p>
 		<p>For children experiencing illness during routine office hours, please call the office at <strong>410-601-8383</strong> so that an appointment may be scheduled, if necessary.  Every effort is made to ensure that your child is seen within <strong>24 hours</strong>.  Any messages left with office staff will receive a prompt response.</p>
+		<p>Use this form to send a message to any staff member in our office.  Messages will be checked daily.  Please ensure you provide accurate information on how you may be reached.  This site is for <strong>non-urgent</strong> messages only.  Please call the office if a prompt response is required.  Please be aware that this is <strong>not</strong> a secure site.  Do not send confidential information.  By providing your contact email address, be aware that you are consenting to it's use.   Please call the office to discuss any concerns you may have <strong>before</strong> providing such information.</p>
+		<p>Leave your message below. Please identify the sender of the message. For medication refill requests, please provide medication name, dosage and whether script is to be collected or should be mailed. Please provide pharmacy phone number where appropriate.</p>
+		<p class="make-urgent">If this is an emergency, please visit an emergency room or call 911 for assistance!</p>
 	</section>  <!-- .main-info-upper   .main-info -->
 
 	<section class="contact-page form-block">
 		<form id="contact-forms" name="form1" class="main-contact-form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="contact-send.php">
-			<header class="contact-form-head">
-				<h2>Send us a message or request:</h2>
-				<p>Use this form to send a message to any staff member in our office.  Messages will be checked daily.  Please ensure you provide accurate information on how you may be reached.  This site is for <strong>non-urgent</strong> messages only.  Please call the office if a prompt response is required.  Please be aware that this is <strong>not</strong> a secure site.  Do not send confidential information.  By providing your contact email address, be aware that you are consenting to it's use.   Please call the office to discuss any concerns you may have <strong>before</strong> providing such information.</p>
-				<p class="make-urgent">If this is an emergency, please visit an emergency room or call 911 for assistance!</p>
-			</header>  <!-- .contact-form-head -->
-
 			<ul class="contact-form-body">
 				<li class="submission-item item1">
 					<label for="Field1" class="first-name">
@@ -151,7 +148,7 @@
 				</li>  <!-- .item4 -->
 				<li class="submission-item item5">
 					<label for="Field5" class="message">
-						Leave your message below. Please identify the sender of the message. For medication refill requests, please provide medication name, dosage and whether script is to be collected or should be mailed. Please provide pharmacy phone number where appropriate.
+						Message
 					</label>
 					<span class="message-box input-field">
 						<textarea
