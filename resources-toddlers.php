@@ -16,7 +16,7 @@
 	<?php  // specifications for posts
 		$args = array(
 			'post_type'				=> 'articles',
-			'cat'					=> '9',
+			'cat'					=> '9',    // local: 9 / live:  12
 		   	'posts_per_page'      	=> '1'
 		);
 		$query = new WP_Query($args);

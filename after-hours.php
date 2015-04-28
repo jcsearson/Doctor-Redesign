@@ -13,7 +13,7 @@
 	<?php  // specifications for posts
 		$args = array(
 			'post_type'				=> 'articles',
-			'cat'					=> '3',
+			'cat'					=> '3',  // local: 3 / live:  3
 		   	'posts_per_page'      	=> '1'
 		);
 		$query = new WP_Query($args);
